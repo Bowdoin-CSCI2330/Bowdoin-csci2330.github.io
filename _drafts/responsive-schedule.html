@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="responsive-table.css">
+
+<div class="schedule">
+	<div class="Rtable Rtable--5cols Rtable--collapse Rtable-head">
+		<div class="Rtable-cell Rtable-cell--head">Meet</div>
+		<div class="Rtable-cell">Date</div>
+		<div class="Rtable-cell">Topic</div>
+		<div class="Rtable-cell">Reading</div>
+		<div class="Rtable-cell Rtable-cell--foot">Notes</div>
+	</div>
+
+	{% assign schedule = site.data.schedule %}
+	{% for meeting in schedule %}
+	<div class="Rtable Rtable--5cols Rtable--collapse">
+		<div class="Rtable-cell Rtable-cell--head">{{ meeting.Week }}</div>
+		<div class="Rtable-cell">{{ meeting.Date }}</div>
+		<div class="Rtable-cell">{{ meeting.Topic }}</div>
+		<div class="Rtable-cell Rtable-cell--foot">{{ meeting.Reading }}</div>
+		<div class="Rtable-cell">{{ meeting.Notes }}</div>
+	</div>
+	{% endfor %}
+</div>

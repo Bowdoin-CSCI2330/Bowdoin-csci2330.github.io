@@ -1,0 +1,123 @@
+/* === General Sitewide === */
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.207/distr/fira_code.css);
+
+/* Specify in CSS */
+body { 
+	font-family: 'Fira Code', monospace; 
+}
+
+@supports (font-variation-settings: normal) {
+  	.code { 
+	  font-family: 'Fira Code VF', monospace; 
+	}
+}
+
+.wrapper {
+	max-width: 90%;
+}
+
+.page-heading {
+	margin-top: 1em;
+	font-size: xx-large;
+	text-align: center;
+}
+
+.page-content a {
+	text-decoration: underline;
+}
+
+.footer-col-3 p {
+	text-align: right;
+}
+
+.due-date {
+	/* font-weight: bold; */
+	color: red;
+}
+
+/* === General Listings === */
+.post-list h2 {
+	font-size: x-large;
+	margin-bottom: 0;
+}
+
+.post-list a {
+	font-size: 1em;
+}
+
+.post-list > li {
+	margin-bottom: 0.25em;
+}
+
+.post-list li:nth-child(even) {
+	background-color: #f7f7f7;
+}
+
+/* === Projects, Exercises, and Labs === */
+.samples .post-list > li, 
+.exercises .post-list > li, 
+.labs .post-list > li,
+.projects .post-list > li {
+	padding: 0.5em;
+	border: 1px solid black;
+}
+
+.samples .post-meta,
+.exercises .post-meta,
+.labs .post-meta,
+.projects .post-meta {
+	color: red;
+}
+
+/* === Lecture Notes === */
+.notes .post-link {
+	display: inline;
+}
+
+.notes blockquote {
+	margin-left: 1em;
+}
+
+/* == Resource List == */
+.resources .post-list a {
+	display: inline;
+}
+
+/* === Schedule Table === */
+.schedule td {
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+	vertical-align: top;
+}
+
+.schedule tr th {
+	border-bottom: 1px solid black;
+}
+
+.schedule tr:last-child td {
+	border-bottom: 1px solid black;
+}
+
+.schedule tr th:nth-child(1),
+.schedule tr td:nth-child(1) {
+	width: 10%;
+	text-align: center;
+}
+
+.schedule tr th:nth-child(2),
+.schedule tr td:nth-child(2) {
+	width: 5%;
+	text-align: center;
+}
+
+.schedule tr td:nth-child(3) {
+	width: 30%;
+}
+
+.schedule tr td:nth-child(4) {
+	width: 20%;
+}
+
+.schedule tr td:nth-child(5) {
+	width: 40%;
+}

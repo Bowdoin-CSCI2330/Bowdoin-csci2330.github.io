@@ -1,0 +1,24 @@
+# Useful resources for completing assignments
+- title: Coding Design & Style Guide
+  subtitle: coding principles to observe
+  url: https://web.bowdoin.edu/~sbarker/teaching/courses/systems/19fall/coding.php
+
+- title: UNIX Crash Course
+  subtitle: working with the command line
+  url: https://web.bowdoin.edu/~sbarker/unix/
+
+- title: GDB Reference Sheet
+  subtitle: for important commands when using the gdb debugger
+  url: https://web.bowdoin.edu/~sbarker/teaching/courses/systems/19fall/files/gdb-reference.pdf
+
+- title: x86 Register Reference Sheet
+  subtitle: most common x86-64 register names
+  url: https://web.bowdoin.edu/~sbarker/teaching/courses/systems/19fall/files/x86-registers.pdf
+
+- title: CSCI 2330 Piazza page
+  subtitle: class discussions
+  url: https://piazza.com/class/jyori0lyd8r63n
+
+- title: CSCI Collaboration Policy
+  subtitle: details on collaboration levels
+  url: https://turing.bowdoin.edu/dept/collab.php

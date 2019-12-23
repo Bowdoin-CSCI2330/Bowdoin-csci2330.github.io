@@ -1,0 +1,15 @@
+<div class="resources">
+	<h2>Useful Resources</h2>
+	<hr/>
+	<p>The following resources will be helpful in completing the projects.</p>
+
+	<ul class="post-list">
+		{% assign resources = site.data.resources %}
+		{% for resource in resources %}
+		<li>
+			<a class="post-link" href="{{ resource.url | relative_url }}">{{ resource.title | escape }}</a>
+			<span class="post-meta">{{ resource.subtitle | escape }}</span>
+		</li>
+		{% endfor %}
+	</ul>
+</div>

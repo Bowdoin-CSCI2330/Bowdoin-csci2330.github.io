@@ -1,0 +1,91 @@
+
+.Rtable {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 0 3em 0;
+	padding: 0;
+}
+
+.Rtable-cell {
+	box-sizing: border-box;
+	flex-grow: 1;
+	width: 100%; 
+	padding: 0.8em 1.2em;
+	/* overflow: hidden;  */
+	list-style: none;
+	/* background: fade(slategrey, 20%); */
+}
+
+.schedule .Rtable-head {
+	border: 1px solid #dedede;
+	border-bottom: 1px solid black;
+	font-weight: bold;
+	background-color: #f0f0f0;
+}
+
+.schedule .Rtable:last-child {
+	border-bottom: 1px solid black;
+}
+
+.Rtable--2cols > .Rtable-cell {
+	width: 50%;
+}
+
+.Rtable--3cols > .Rtable-cell {
+	width: 33.33%;
+}
+
+.Rtable--4cols > .Rtable-cell {
+	width: 25%;
+}
+
+.Rtable--5cols > .Rtable-cell {
+	width: 20%;
+}
+
+.Rtable--6cols > .Rtable-cell {
+	width: 16.6%;
+}
+
+.Rtable--5cols > .Rtable-cell:nth-of-type(1),
+.Rtable--5cols > .Rtable-cell:nth-of-type(2) {
+	width: 5%;
+}
+
+.Rtable--5cols > .Rtable-cell:nth-of-type(3) {
+	width: 30%;
+}
+
+.Rtable--5cols > .Rtable-cell:nth-of-type(4) {
+	width: 20%;
+}
+
+.Rtable--5cols > .Rtable-cell:nth-of-type(5) {
+	width: 40%;
+}
+
+/* Responsive ==================================== */
+@media all and (max-width: 640px) {
+  	.Rtable--collapse  {
+		display: block;
+  	}
+	
+	.Rtable--collapse  > .Rtable-cell { 
+		width: 100% !important; 
+	}
+    .Rtable--collapse > .Rtable-cell--foot { 
+		margin-bottom: 1em; 
+	}
+}
+
+.no-flexbox .Rtable {
+	display: block;
+}
+
+.no-flexbox .Rtable > .Rtable-cell { 
+	width: 100%; 
+}
+.no-flexbox .Rtable > .Rtable-cell--foot { 
+	margin-bottom: 1em; 
+}
+

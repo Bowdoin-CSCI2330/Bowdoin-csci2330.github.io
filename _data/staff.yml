@@ -1,0 +1,17 @@
+- name: Stephen Houser
+  role: Instructor
+  email: houser@bowdoin.edu
+  hours: T-Th-F 10-11am
+  office: 112 H-L
+
+- name: Stu Dent
+  role: TA
+  email: student@bowdoin.edu
+  hours: M-W-T 5-8pm
+  office: 224 Searles
+
+- name: Brittany Echols
+  role: TA
+  email: student@bowdoin.edu
+  hours: M-W-T 5-8pm
+  office: 224 Searles  

@@ -1,0 +1,92 @@
+#
+title: Sample Course (Spring 2020)
+theme: minima
+excerpt_separator: <!--more-->
+github_username: stephenhouser
+#twitter_username: stephenhouser
+author: Stephen Houser
+email: houser@bowdoin.edu
+description: >-
+  Bowdoin College, 
+  Computer Science
+future: false
+
+collections:
+  notes:
+    output: true
+    sort_by: order
+  projects:
+    output: true
+    sort_by: order
+  labs:
+    output: true
+    sort_by: order
+  demos:
+    output: true
+    sort_by: order
+  exercises:
+    output: true
+    sort_by: order
+
+defaults:
+  - scope:
+      path: ""
+      type: "notes"
+    values:
+      layout: "note"
+      hidden: false
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+      hidden: false
+  - scope:
+      path: ""
+      type: "labs"
+    values:
+      layout: "lab"
+      hidden: false
+  - scope:
+      path: ""
+      type: "samples"
+    values:
+      layout: "sample"
+      hidden: false
+  - scope:
+      path: ""
+      type: "exercises"
+    values:
+      layout: "exercise"
+      hidden: false
+
+# Handling Reading
+#safe:                 false
+#include:              [".htaccess"]
+exclude:              ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/", "scripts"]
+#encoding:             "utf-8"
+
+# Filtering Content
+#show_drafts: null
+#limit_posts: 0
+#future:      false
+#unpublished: false
+
+# Serving
+#detach:  false
+#port:    4000
+#host:    127.0.0.1
+#baseurl: "" # does not include hostname
+#show_dir_listing: false
+
+# Outputting
+#permalink:     date
+#paginate_path: /page:num
+#timezone:      null
+
+#quiet:    false
+#verbose:  false
+#defaults: []
+#
+#liquid:
+#  error_mode: warn

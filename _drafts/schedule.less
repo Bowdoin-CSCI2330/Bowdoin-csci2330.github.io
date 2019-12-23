@@ -1,0 +1,78 @@
+/* CSS */
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.207/distr/fira_code.css);
+
+.Rtable {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 0 3em 0;
+	padding: 0;
+	// border: solid 3px white;
+
+}
+
+.Rtable-cell {
+	box-sizing: border-box;
+	flex-grow: 1;
+	width: 100%; 
+	padding: 0.8em 1.2em;
+	overflow: hidden; 
+	list-style: none;
+	// border: solid 3px white;
+	background: fade(slategrey, 20%);
+
+	// > h1,
+	// > h2,
+	// > h3,
+	// > h4,
+	// > h5,
+	// > h6 {
+	// 	margin: 0;
+	// }
+}
+
+.Rtable--2cols>.Rtable-cell {
+	width: 50%;
+}
+
+.Rtable--3cols>.Rtable-cell {
+	width: 33.33%;
+}
+
+.Rtable--4cols>.Rtable-cell {
+	width: 25%;
+}
+
+.Rtable--5cols>.Rtable-cell {
+	width: 20%;
+}
+
+.Rtable--6cols>.Rtable-cell {
+	width: 16.6%;
+}
+
+@breakpoint: 640px;
+
+/* Responsive
+==================================== */
+@media all and (max-width: @breakpoint) {
+  .Rtable--collapse  {
+    display: block;
+    > .Rtable-cell { width: 100% !important; }
+    > .Rtable-cell--foot { margin-bottom: 1em; }
+  }
+}
+
+// Non-Flex modernizer fallback
+.no-flexbox .Rtable {
+  display: block;
+  > .Rtable-cell { width: 100%; }
+  > .Rtable-cell--foot { margin-bottom: 1em; }
+}
+
+
+/* Specify in CSS */
+body,code { font-family: 'Fira Code', monospace; }
+
+@supports (font-variation-settings: normal) {
+  code { font-family: 'Fira Code VF', monospace; }
+}

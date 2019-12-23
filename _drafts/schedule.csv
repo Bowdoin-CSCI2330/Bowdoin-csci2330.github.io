@@ -1,0 +1,17 @@
+Week,Date,Topic,Reading,Notes
+1,9/4,"Introduction, Syllabus, Foundations, and Socket Programming",[Ch. 1 - Sections 1.1 - 1.4](https://book.systemsapproach.org/foundation/problem.html),"[A Brief History of the Internet](http://www.internetsociety.org/internet/what-internet/history-internet/brief-history-internet), [There and Back Again: A Packet's Tale (video)](https://www.youtube.com/watch?v=ewrBalT_eBM), [Beej's Guide to Network Programming (C)](http://beej.us/guide/bgnet/), [The Java Tutorial: All About Sockets](https://docs.oracle.com/javase/tutorial/networking/sockets/), [Python Network Programming](http://www.tutorialspoint.com/python/python_networking.htm)"
+2,9/11,Network Performance,[Ch. 1 - Sections 1.5 and 1.6](https://book.systemsapproach.org/foundation/performance.html),
+3,9/18,"Local Links and Encoding, More Socket Programming",[Ch. 2 - Sections 2.1 - 2.5](https://book.systemsapproach.org/direct/problem.html),
+4,9/25,Ethernet and WiFi,[Ch. 2 - Sections 2.6 - 2.9](https://book.systemsapproach.org/direct/ethernet.html),[Project #1 Due](/project-1.html)
+5,10/2,Switching and Bridging,[Ch. 3 - Section 3.1](https://book.systemsapproach.org/internetworking/switching.html),Exam #1 (Blackboard)
+6,10/9,Basic Internetworking (IP),[Ch 3. - Section 3.2](https://book.systemsapproach.org/internetworking/basic-ip.html),[Bootstrapping with BOOTP and DHCP](https://www.cisco.com/c/en/us/about/press/internet-protocol-journal/back-issues/table-contents-22/dhcp.html)
+7,10/16,No Class,,
+8,10/23,"Routing, Internet of Things (IoT) for Project #3 & #4",[Ch. 3 - Section 3.3 - 3.5](https://book.systemsapproach.org/internetworking/routing.html),[Project #2 Due](/project-2.html)
+9,10/30,"Simple Demultiplexer (UDP), Reliable Byte Stream (TCP)",[Ch. 5 - Section 5.1 - 5.2](https://book.systemsapproach.org/e2e/problem.html),
+10,11/6,"Remote Procedure Call (RPC), Real Time Protocol (RTP)",[Ch. 5 - Section 5.3 - 5.5](https://book.systemsapproach.org/e2e/rpc.html),"Exam #2 (Blackboard), [YouTube network traffic at a campus network](http://gaia.cs.umass.edu/networks/papers/MMCN08-0.2.pdf)"
+11,11/13,Presentation Formatting and Multimedia Data,[Ch. 7 - Sections 7.1 - 7.3](https://book.systemsapproach.org/data/problem.html),
+12,11/20,Network Security,[Ch. 8 - Sections 8.1 - 8.6](https://book.systemsapproach.org/security/problem.html),[Project #3 Due](/project-3.html)
+13,11/27,Thanksgiving Break,,
+14,12/4,Internet of Things (IoT),,
+15,12/11,"Traditional Applications, Overlay Networks, More IoT","[Ch. 9 - Sections 9.1, 9.3](https://book.systemsapproach.org/applications/problem.html)",
+Finals,12/18,,,"Final Exam (Blackboard), [Project #4 Due](/project-4.html)"

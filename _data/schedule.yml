@@ -1,0 +1,17 @@
+- meeting:	1
+  date:	2020-01-21 08:00
+  topic: "[Introduction](intro-slides.pdf)"
+  reading: Ch. 1 (skim)
+#   notes: 
+
+- meeting: 2
+  date: 2020-01-23
+  topic: Unix Warmup Lab
+#   reading: x
+#   notes: x
+
+# - meeting: 3
+#   date: 2020-01-24
+#   topic: Bits and Binary
+#   reading: Ch. 2.1
+#   notes: representation-slides.pdf, binary-exercises.pdf

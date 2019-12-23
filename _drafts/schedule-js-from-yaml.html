@@ -1,0 +1,70 @@
+
+---
+title: Schedule
+---
+
+<table id="schedule">
+	<thead>
+		<tr>
+			<th>MEETING</th>
+			<th>TOPIC</th>
+			<th>READING</th>
+			<th>NOTES &amp; LINKS</th>
+		</tr>
+	</thead>
+	<tbody>
+	</tbody>
+</table>
+
+
+<!-- YAML Parser; convert YAML to JavaScript object. -->
+<script type="text/javascript" src="https://rawgit.com/jeremyfa/yaml.js/develop/dist/yaml.min.js"></script>
+
+<script type="text/javascript">
+	function populate_schedule(table, meetings) {
+		var schedule = document.getElementById(table);
+		var tbody = schedule.getElementsByTagName('tbody')[0];
+		if (tbody !== null) {
+			meetings.forEach(function (meeting) {
+				var row = tbody.insertRow();
+
+				['date', 'topic', 'reading', 'notes'].forEach(function (key) {
+					var cell = row.insertCell();
+					var cellText = meeting[key];
+
+					if (key === 'date') {
+						var d = new Date(meeting[key]);
+						// request a weekday along with a long date
+						var options = { weekday: 'short', month: 'short', day: 'numeric' };
+						cellText = d.toLocaleDateString('en-US', options);
+					} else if (cellText === null) {
+						cellText = '';
+					}
+
+					var cellText = document.createTextNode(cellText);
+					cell.appendChild(cellText);
+				});
+			});
+		}
+	}
+
+	function refresh_schedule(table) {
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', 'schedule.yml');
+		xhr.onload = function () {
+			if (xhr.status === 200) {
+				var meetings = YAML.parse(xhr.responseText);
+				populate_schedule(table, meetings);
+			}
+			else {
+				alert('Request failed.  Returned status of ' + xhr.status);
+			}
+		};
+		xhr.send();
+	}
+
+	document.addEventListener("DOMContentLoaded", function (event) {
+		refresh_schedule('schedule');
+	});
+</script>
+
