@@ -1,5 +1,5 @@
 #
-title: Sample Course (Spring 2020)
+title: CSCI 2330 Foundations of Computer Systems (Spring 2020)
 theme: minima
 excerpt_separator: <!--more-->
 github_username: stephenhouser
@@ -11,18 +11,20 @@ description: >-
   Computer Science
 future: false
 
+discussion_url: https://piazza.com/class/jyori0lyd8r63n
+
 collections:
   notes:
     output: true
     sort_by: order
   projects:
-    output: true
+    output: false
     sort_by: order
   labs:
     output: true
     sort_by: order
-  demos:
-    output: true
+  samples:
+    output: false
     sort_by: order
   exercises:
     output: true
@@ -63,7 +65,7 @@ defaults:
 # Handling Reading
 #safe:                 false
 #include:              [".htaccess"]
-exclude:              ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/", "scripts"]
+exclude:              ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/", "scripts", "projects.md", "samples.md"]
 #encoding:             "utf-8"
 
 # Filtering Content

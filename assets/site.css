@@ -4,12 +4,21 @@
 /* Specify in CSS */
 body { 
 	font-family: 'Fira Code', monospace; 
+	/* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" */
+	font-size: 14px;
+	line-height: 1.5;
+	
+	/* font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" */
 }
 
 @supports (font-variation-settings: normal) {
   	.code { 
 	  font-family: 'Fira Code VF', monospace; 
 	}
+}
+
+h2 {
+	border-bottom: 1px solid black;	
 }
 
 .wrapper {
@@ -54,10 +63,17 @@ body {
 }
 
 /* === Projects, Exercises, and Labs === */
-.samples .post-list > li, 
-.exercises .post-list > li, 
-.labs .post-list > li,
-.projects .post-list > li {
+.samples .post-list li h2,
+.exercises .post-list li h2,
+.labs .post-list li h2,
+.projects .post-list li h2 {
+	border: none;
+}
+
+.samples .post-list li, 
+.exercises .post-list li, 
+.labs .post-list li,
+.projects .post-list li {
 	padding: 0.5em;
 	border: 1px solid black;
 }
@@ -120,4 +136,19 @@ body {
 
 .schedule tr td:nth-child(5) {
 	width: 40%;
+}
+
+
+.people > li {
+	list-style: none;
+}
+
+
+.textbook-cover > img {
+	max-height: 200px;
+	float: right;
+}
+
+.textbook-cover.required > img {
+	border: 1px solid red;
 }
