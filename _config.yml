@@ -24,7 +24,7 @@ collections:
     output: true
     sort_by: order
   samples:
-    output: false
+    output: true
     sort_by: order
   exercises:
     output: true

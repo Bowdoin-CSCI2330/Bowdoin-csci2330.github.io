@@ -44,6 +44,10 @@ h2 {
 	color: red;
 }
 
+/* .post-meta.due-date {
+	float: right;
+} */
+
 /* === General Listings === */
 .post-list h2 {
 	font-size: x-large;
@@ -82,7 +86,16 @@ h2 {
 .exercises .post-meta,
 .labs .post-meta,
 .projects .post-meta {
-	color: red;
+	/* color: red; */
+}
+
+.exercise ol {
+	margin-top: 2em;
+}
+
+.exercise ol li {
+	margin-left: 2em;
+	margin-bottom: 1em;
 }
 
 /* === Lecture Notes === */
@@ -151,4 +164,8 @@ h2 {
 
 .textbook-cover.required > img {
 	border: 1px solid red;
+}
+
+header h3 {
+	margin-bottom: 0;
 }

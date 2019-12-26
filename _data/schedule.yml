@@ -1,17 +1,297 @@
-- meeting:	1
-  date:	2020-01-21 08:00
-  topic: "[Introduction](intro-slides.pdf)"
-  reading: Ch. 1 (skim)
-#   notes: 
+- month: 1
+  day: 21
+  date: "2020-01-21 08:30"
+  meeting: 1
+  topic: "[Introduction](notes/introduction)"
+  reading: "Ch. 1 (skim)"
 
-- meeting: 2
-  date: 2020-01-23
-  topic: Unix Warmup Lab
-#   reading: x
-#   notes: x
+- month: 1
+  day: 23
+  date: "2020-01-23 08:30"
+  meeting: 2
+  topic: "Bits and Binary"
+  reading: "Ch. 2.1"
+  notes: "[binary-exercises](exercises/binary-exercises)"
 
-# - meeting: 3
-#   date: 2020-01-24
-#   topic: Bits and Binary
-#   reading: Ch. 2.1
-#   notes: representation-slides.pdf, binary-exercises.pdf
+- month: 1
+  day: 24
+  date: "2020-01-24 08:30"
+  meeting: L0
+  topic: "Unix Warmup"
+
+- month: 1
+  day: 28
+  date: "2020-01-28 08:30"
+  meeting: 3
+  topic: "Data Representation: Ints"
+  reading: "Ch. 2.2"
+  notes: "[representation-exercises](exercises/representation-exercises)"
+
+- month: 1
+  day: 30
+  date: "2020-01-30 08:30"
+  meeting: 4
+  topic: "Data Representation: Ints"
+  reading: "Ch. 2.3"
+
+- month: 1
+  day: 31
+  date: "2020-01-31 08:30"
+  meeting: L1
+  topic: "A Bit Puzzling"
+  notes: "[Lab 1 Due](labs/datalab)"
+
+- month: 2
+  day: 4
+  date: "2020-02-04 08:30"
+  meeting: 5
+  topic: "Signed vs Unsigned, Integer Logic"
+  notes: "[logic-exercises](exercises/logic-exercises)"
+
+- month: 2
+  day: 6
+  date: "2020-02-06 08:30"
+  meeting: 6
+  topic: "Floating-Point Data, Memory"
+  reading: "Ch. 2.4"
+  notes: "[fp-exercises](exercises/fp-exercises)"
+
+- month: 2
+  day: 7
+  date: "2020-02-07 08:30"
+  meeting: L1
+  topic: "A Bit Puzzling (cont)"
+
+- month: 2
+  day: 11
+  date: "2020-02-11 08:30"
+  meeting: 7
+  topic: "Programming with Memory"
+  reading: "C Pointers & Memory tutorial"
+  notes: "[C Pointers & Memory Tutorial](https://pebble.gitbooks.io/learning-c-with-pebble/content/chapter08.html), [pointer-exercises](exercises/pointer-exercises)"
+
+- month: 2
+  day: 13
+  date: "2020-02-13 08:30"
+  meeting: 8
+  topic: "Programming with Memory"
+  notes: "[stringtest.c](samples/stringtest.c), [pointertest.c](samples/pointertest.c)"
+
+- month: 2
+  day: 14
+  date: "2020-02-14 08:30"
+  meeting: L2
+  topic: "Program Pointers"
+  notes: "Debugging Practice Programs, [GDB Tutorial](https://www.cs.umd.edu/~srhuang/teaching/cmsc212/gdb-tutorial-handout.pdf)"
+
+- month: 2
+  day: 18
+  date: "2020-02-18 08:30"
+  meeting: 9
+  topic: "x86-64 ISA, Data Movement"
+  reading: "Ch. 3.1-3.4"
+
+- month: 2
+  day: 20
+  date: "2020-02-20 08:30"
+  meeting: 10
+  topic: "Arithmetic, Condition Codes"
+  reading: "Ch. 3.5"
+  notes: "[mov-exercises](exercises/mov-exercises)"
+
+- month: 2
+  day: 21
+  date: "2020-02-21 08:30"
+  meeting: L2
+  topic: "Program Pointers (cont)"
+
+- month: 2
+  day: 25
+  date: "2020-02-25 08:30"
+  meeting: 11
+  topic: "Control Flow: Conditionals"
+  reading: "Ch. 3.6"
+
+- month: 2
+  day: 27
+  date: "2020-02-27 08:30"
+
+- month: 2
+  day: 28
+  date: "2020-02-28 08:30"
+  meeting: L3
+  topic: BitBombs
+
+- month: 3
+  day: 3
+  date: "2020-03-03 08:30"
+  meeting: 12
+  topic: "Control Flow: Loops & Switches"
+
+- month: 3
+  day: 5
+  date: "2020-03-05 08:30"
+  meeting: 13
+  topic: "Control Flow: Procedures"
+  reading: "Ch. 3.7"
+
+- month: 3
+  day: 6
+  date: "2020-03-06 08:30"
+  topic: "Midterm Exam (in lab)"
+
+- month: 3
+  day: 10
+  date: "2020-03-10 08:30"
+  topic: "No Class: Spring Break"
+
+- month: 3
+  day: 12
+  date: "2020-03-12 08:30"
+  topic: "No Class: Spring Break"
+
+- month: 3
+  day: 13
+  date: "2020-03-13 08:30"
+  topic: "No Class: Spring Break"
+
+- month: 3
+  day: 17
+  date: "2020-03-17 08:30"
+  topic: "No Class: Spring Break"
+
+- month: 3
+  day: 19
+  date: "2020-03-19 08:30"
+  topic: "No Class: Spring Break"
+
+- month: 3
+  day: 20
+  date: "2020-03-20 08:30"
+  topic: "No Class: Spring Break"
+
+- month: 3
+  day: 24
+  date: "2020-03-24 08:30"
+  meeting: 14
+  topic: "Saved Registers & Arrays"
+  reading: "Ch. 3.8"
+
+- month: 3
+  day: 26
+  date: "2020-03-26 08:30"
+  meeting: 15
+  topic: "Structs & Floating Point"
+  reading: "Ch. 3.9"
+
+- month: 3
+  day: 27
+  date: "2020-03-27 08:30"
+  meeting: L3
+  topic: "BitBombs (cont)"
+
+- month: 3
+  day: 31
+  date: "2020-03-31 08:30"
+  meeting: 16
+  topic: "Buffer Overflow & Code Injection"
+  reading: "Ch. 3.10"
+  notes: "[buftest.c](samples/buftest.c), [exploit.c](samples/exploit.c)"
+
+- month: 4
+  day: 2
+  date: "2020-04-02 08:30"
+  meeting: 17
+  topic: "Return-Oriented Programming"
+
+- month: 4
+  day: 3
+  date: "2020-04-03 08:30"
+  meeting: L4
+  topic: "Byte Stacker"
+
+- month: 4
+  day: 7
+  date: "2020-04-07 08:30"
+  meeting: 18
+  topic: "Caching & The Memory Hierarchy"
+  reading: "Ch. 6.2-6.3"
+
+- month: 4
+  day: 9
+  date: "2020-04-09 08:30"
+  meeting: 19
+  topic: "Direct-Mapped Caches"
+  reading: "Ch. 6.4-6.5"
+  notes: "[caching-exercises](exercises/caching-exercises)"
+
+- month: 4
+  day: 10
+  date: "2020-04-10 08:30"
+  meeting: L4
+  topic: "Byte Stacker (cont)"
+
+- month: 4
+  day: 14
+  date: "2020-04-14 08:30"
+  meeting: 20
+  topic: "Associative Caches"
+  notes: "[associative-exercises](exercises/associative-exercises)"
+
+- month: 4
+  day: 16
+  date: "2020-04-16 08:30"
+  meeting: 21
+  topic: "Exceptional Control Flow"
+  reading: "Ch. 8.1-8.3"
+
+- month: 4
+  day: 17
+  date: "2020-04-17 08:30"
+  meeting: L5
+  topic: "Make Some Cache"
+
+- month: 4
+  day: 21
+  date: "2020-04-21 08:30"
+  meeting: 22
+  topic: "Process Management"
+  reading: "Ch. 8.4"
+  notes: "[fork-exercises](exercises/fork-exercises), [forktest.c](samples/forktest.c)"
+
+- month: 4
+  day: 23
+  date: "2020-04-23 08:30"
+  meeting: 23
+  topic: "Shells & Signals"
+  reading: "Ch. 8.5"
+
+- month: 4
+  day: 24
+  date: "2020-04-24 08:30"
+
+- month: 4
+  day: 28
+  date: "2020-04-28 08:30"
+  meeting: 24
+  topic: "Concurrency and Threads"
+  notes: "[thread.c](samples/thread.c)"
+
+- month: 4
+  day: 30
+  date: "2020-04-30 08:30"
+  meeting: L6
+  topic: "The Bowdoin Shell"
+
+- month: 5
+  day: 1
+  date: "2020-05-01 08:30"
+  meeting: 25
+  topic: "Virtual Memory"
+
+- month: 5
+  day: 5
+  date: "2020-05-05 08:30"
+  meeting: 26
+  topic: "Linking, Digital Logic, and Wrap-up"
+

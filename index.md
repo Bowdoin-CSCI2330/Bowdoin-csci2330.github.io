@@ -17,7 +17,7 @@ title: Schedule
         {% assign schedule = site.data.schedule %}
         {% for meeting in schedule %}
             <tr>
-                <td>{{ meeting.date | date: date_format}}</td>
+                <td>{{ meeting.date | date: "%a, %h %d" }}</td>
                 <td>{{ meeting.meeting }}</td>
                 <td>{{ meeting.topic | markdownify }}</td>
                 <td>{{ meeting.reading | markdownify }}</td>
