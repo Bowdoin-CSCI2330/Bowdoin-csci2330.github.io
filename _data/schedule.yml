@@ -39,7 +39,7 @@
   date: "2020-01-31 08:30"
   meeting: L1
   topic: "A Bit Puzzling"
-  notes: "[Lab 1 Due](labs/datalab)"
+  reading: "[Lab 0 Due](labs/lab-0-warmup)"
 
 - month: 2
   day: 4
@@ -82,6 +82,7 @@
   date: "2020-02-14 08:30"
   meeting: L2
   topic: "Program Pointers"
+  reading: "[Lab 1 Due](labs/lab-1-datalab)"
   notes: "Debugging Practice Programs, [GDB Tutorial](https://www.cs.umd.edu/~srhuang/teaching/cmsc212/gdb-tutorial-handout.pdf)"
 
 - month: 2
@@ -121,6 +122,7 @@
   date: "2020-02-28 08:30"
   meeting: L3
   topic: BitBombs
+  reading: "[Lab 2 Due](labs/lab-2-pointers)"
 
 - month: 3
   day: 3
@@ -209,6 +211,7 @@
   date: "2020-04-03 08:30"
   meeting: L4
   topic: "Byte Stacker"
+  reading: "[Lab 3 Due](labs/lab-3-bitbomb)"
 
 - month: 4
   day: 7
@@ -250,6 +253,7 @@
   date: "2020-04-17 08:30"
   meeting: L5
   topic: "Make Some Cache"
+  reading: "[Lab 4 Due](labs/lab-4-byte-stacker)"
 
 - month: 4
   day: 21
@@ -282,6 +286,7 @@
   date: "2020-04-30 08:30"
   meeting: L6
   topic: "The Bowdoin Shell"
+  reading: "[Lab 5 Due](labs/lab-5-cache)"
 
 - month: 5
   day: 1
@@ -294,4 +299,5 @@
   date: "2020-05-05 08:30"
   meeting: 26
   topic: "Linking, Digital Logic, and Wrap-up"
+  notes: "[Lab 6 Due](labs/lab-6-shell)"
 

@@ -5,6 +5,7 @@ due: 2020-01-31 08:30
 collaboration_policy: Level 1
 group_policy: Individual
 ---
+This lab is designed to introduce and familiarize you with many of the tools that we will be using throughout the semester. Most significantly, this lab will teach you the basics of working in a Unix environment, using the command line, and writing and running programs on remote servers. Getting a handle on your working environment early on will save you lots of time in the long run and let you focus on the actual course material of the later labs.
 
 <!--more-->
 
@@ -54,8 +55,8 @@ NOTE: *Clone with SSH* will allow you to access GitHub without typing your usern
 
 You now have all the information you need to clone the repository onto the College UNIX/Linux system. Open up your terminal, and log in to `dover` or `foxcroft`, and change to the directory where you want your work to be located and run the following `git clone` command. **NOTE: Use the repository URL you copied with your username and the correct lab name**.
 
-```
-git clone https://github.com/bowdoin-csci2330/LABNAME-YOURUSERNAME
+```bash
+$ git clone https://github.com/bowdoin-csci2330/LABNAME-YOURUSERNAME
 ```
 
 The above command will create a new directory named `LABNAME-YOURUSERNAME` (which is the cloned repository) in the current directory (you can give it any name you wish). Initially, there are only the *starter* files within your repository, so your cloned repository will have copies of them.
@@ -70,7 +71,7 @@ Start by `cd`-ing into your cloned directory, and do the following:
 
 1. Create a program called `like.c` that simply prints the message "I like [xyz]!" where [xyz] is the first command line argument. If the program is not given any command line arguments, or is given more than one, it should instead print "What do I like?". Here are a few examples, assuming the executable compiled from `like.c` is named like:
 
-    ```
+    ```bash
     $ ./like pizza
     I like pizza!
     $ ./like Linux
@@ -79,7 +80,7 @@ Start by `cd`-ing into your cloned directory, and do the following:
     What do I like?
     $ ./like Linux pizza
     What do I like?
-    $
+    $ 
     ```
 
     If you've never written a C program before, just use the example in the Unix tutorial as a starting template and modify that -- you don't need any further knowledge of C to complete this part. *Your name should be included in a comment at the top of your program*.
@@ -88,7 +89,7 @@ Start by `cd`-ing into your cloned directory, and do the following:
 
 3. Once your program is finished, I should be able to run the following set of commands from your lab directory to compile your program, run it, and then clean up (at which point I'd need to run `make` again before I could run the program again):
 
-    ```
+    ```bash
     $ make build
     $ ./like systems
     I like systems!
@@ -98,7 +99,7 @@ Start by `cd`-ing into your cloned directory, and do the following:
     $ make
     $ ./like make
     I like make!
-    $
+    $ 
     ```
 
 4. Add your files to the git repository using `git add`, then commit your files using `git commit`. You will have to enter a *commit message* with `git commit` that descirbes the changes you made. In this beginning step, that message might be something like "Initial version".
