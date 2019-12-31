@@ -1,0 +1,105 @@
+---
+layout: default
+---
+<!-- jQuery -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<!-- jQuery Data Tables -->
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+
+<!-- Bootstrap Tables -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.js"></script>
+
+<!-- for tooltips -->
+<script src="https://unpkg.com/popper.js"></script>
+<script src="https://unpkg.com/tooltip.js"></script>
+
+<!-- for badges -->
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+
+<!-- Local Style and Script -->
+<link rel="stylesheet" href="datalab.css">
+<script type="text/javascript" src="datalab.js"></script>
+
+<header class='header'>
+    <div class='container-fluid'>
+        <h1 class="center">Data Lab Scoreboard</h1>
+        <hr />
+    </div>
+</header>
+
+<div class="container-fluid">
+    <table id="scores" class="display compact" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th rowspan="2">Nickname</th>
+                <th rowspan="2">Score*</th>
+                <th colspan=15>Individual Puzzle Scores <button style="float: right;"onclick="reload_table('#scores');">Reload</button></th>
+            </tr>
+            <tr>
+                <th><span class="tooltip"><span class="tooltiptext">maxVal</span>1</span></th>
+                <th><span class="tooltip"><span class="tooltiptext">swapBytes</span>2</span></th>
+                <th><span class="tooltip"><span class="tooltiptext">maxVal</span>3</span></th>
+                <th><span class="tooltip"><span class="tooltiptext">maxVal</span>4</span></th>
+                <th><span class="tooltip"><span class="tooltiptext">maxVal</span>5</span></th>
+                <th><span class="tooltip"><span class="tooltiptext">maxVal</span>6</span></th>
+                <th><span class="tooltip"><span class="tooltiptext">maxVal</span>7</span></th>
+                <th><span class="tooltip"><span class="tooltiptext">maxVal</span>8</span></th>
+                <th><span class="tooltip"><span class="tooltiptext">maxVal</span>9</span></th>
+                <th><span class="tooltip"><span class="tooltiptext">maxVal</span>10</span></th>
+                <th><span class="tooltip"><span class="tooltiptext">maxVal</span>11</span></th>
+                <th><span class="tooltip"><span class="tooltiptext">maxVal</span>12</span></th>
+                <th><span class="tooltip"><span class="tooltiptext">maxVal</span>13</span></th>
+                <th><span class="tooltip"><span class="tooltiptext">maxVal</span>14</span></th>
+                <th><span class="tooltip"><span class="tooltiptext">maxVal</span>15</span></th>
+            </tr>
+        </thead>
+        <!-- <tfoot>
+            <tr>
+                <th>Nickname</th>
+                <th>Score</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+                <th>10</th>
+                <th>11</th>
+                <th>12</th>
+                <th>13</th>
+                <th>14</th>
+                <th>15</th>
+            </tr>
+        </tfoot> -->
+    </table>
+    <ul class="legend">
+        <li class="score_beat">RED: Score beats the Prof</li>
+        <li class="score_match">BLUE: Score ties the Prof</li>
+        <li class="score_invalid">---/NaN: Incorrect entry</li>
+    </ul>
+</div>
+
+<footer class='footer'>
+    <div class='container-fluid'>
+        <hr />
+        <p>This page shows the operator counts for all students who have submitted entries to the "Data Lab" contest. To enter the contest, run the driver with the <span class="code">-u</span> option: <span class="code">./driver.pl -u "nickname"</span>. Enter as often as you like. This page will show only your most recent submission.</p>
+
+        <p>If all of your puzzle entries are correct and they each match or beat the instructor, then you get the elite <span class="winner"></span> endorsement.</p>
+
+        <p id="score">* <b>Score</b> is defined as (total instructor operations - total student operations). Higher scores are better.</p>
+    </div>
+</footer>
+
+<script type="text/javascript">
+$(document).ready(function () {
+make_datatable('#scores');
+create_tooltips();
+});
+</script>

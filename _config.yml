@@ -3,15 +3,25 @@ title: CSCI 2330 Foundations of Computer Systems (Spring 2020)
 theme: minima
 excerpt_separator: <!--more-->
 github_username: stephenhouser
-#twitter_username: stephenhouser
+twitter_username: stephenhouser
 author: Stephen Houser
 email: houser@bowdoin.edu
 description: >-
   Bowdoin College, 
   Computer Science
 future: false
+timezone: America/New York
 
 discussion_url: https://piazza.com/class/jyori0lyd8r63n
+
+# This is the current scoreboard that /scoreboard will redirect to.
+# Change at the start of each lab.
+scoreboard: /scoreboard/datalab.html
+
+# These files/directories will not be processed.
+# Enable the 'scoreboard.md' when 
+exclude:              ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/", "scripts", "projects.md", "samples.md", "scoreboard.md"]
+
 
 collections:
   notes:
@@ -65,7 +75,7 @@ defaults:
 # Handling Reading
 #safe:                 false
 #include:              [".htaccess"]
-exclude:              ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/", "scripts", "projects.md", "samples.md"]
+#exclude:              ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/", "scripts", "projects.md", "samples.md"]
 #encoding:             "utf-8"
 
 # Filtering Content

@@ -1,0 +1,1 @@
+foxcroft|Fri Dec 20 10:17:53 2019|houser:The Prof|0|56|32|24|131 |bitXor:1:1:2:7 |tmin:1:1:2:1 |isTmax:1:1:2:6 |allOddBits:2:2:2:7 |negate:2:2:2:2 |isAsciiDigit:3:3:2:7 |conditional:3:3:2:7 |isLessOrEqual:3:3:2:13 |logicalNeg:4:4:2:6 |howManyBits:4:4:2:37 |floatScale2:4:4:2:15 |floatFloat2Int:4:4:2:13 |:Test:floatPower2:Test: |10:Timed:out:Timed: |floatPower2:0:4:0:10

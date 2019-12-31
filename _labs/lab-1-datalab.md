@@ -206,4 +206,4 @@ You may use any nickname you like and it need not identify yourself to other con
 
 Your most recent contest submission will appear on a real-time scoreboard, identified only by your nickname. Follow the link below to view the current scoreboard (only active for the duration of the lab).
 
-[Bit Hacker Scoreboard]()
+[Bit Hacker Scoreboard]({{ "/scoreboard/datalab.html" | relative_url }})
