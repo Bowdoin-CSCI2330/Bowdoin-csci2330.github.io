@@ -1,6 +1,6 @@
 ---
 title: Scoreboard
-permalink: /scoreboard
+permalink: /scoreboard/
 layout: default
 ---
 <meta http-equiv="refresh" content='0;url={{ site.scoreboard | relative_url }}' />

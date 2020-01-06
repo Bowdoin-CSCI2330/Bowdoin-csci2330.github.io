@@ -1,7 +1,7 @@
 ---
 title: Exercises
 layout: default
-permalink: /exercises
+permalink: /exercises/
 ---
 # Exercises (not graded)
 ----

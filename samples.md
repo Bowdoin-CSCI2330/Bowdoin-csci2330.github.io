@@ -1,6 +1,6 @@
 ---
 title: Samples
-permalink: /samples
+permalink: /samples/
 layout: default
 ---
 # Sample Code

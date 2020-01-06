@@ -1,7 +1,7 @@
 ---
 title: Labs
 layout: default
-permalink: /labs
+permalink: /labs/
 ---
 # Lab Assignments
 ----

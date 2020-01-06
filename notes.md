@@ -1,7 +1,7 @@
 ---
 title: Notes
 layout: default
-permalink: /notes
+permalink: /notes/
 ---
 # Lecture Notes
 
