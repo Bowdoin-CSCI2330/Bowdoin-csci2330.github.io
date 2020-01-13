@@ -2,8 +2,8 @@
  * Scoreboard for Project 1 Bit Hacker, CS 2330
  */
 
-const INSTRUCTOR_USERID = 'sbarker'; // userid of The Prof
-const SCORE_URL = 'scores-f19.txt' // URL of score log.txt to display
+const INSTRUCTOR_USERID = 'houser'; // userid of The Prof
+const SCORE_URL = 'scores.txt' // URL of score log.txt to display
 
 const BIGNUM = 999999; // Arbitrary no.of ops assigned to incorrect solution
 const THRESHOLD = -1000; // Total score < threshhold -> incorrect solution
