@@ -1,7 +1,7 @@
 ---
-title: Introduction
-excerpt: Overview of the course; schedule, projects, exams, important dates, etc.
-order: 0
+title: Tooling
+excerpt: Introduction to the tools we will use and Lab 0
+order: 1
 ---
 <meta http-equiv="refresh" content="0;url={{ page.id | prepend: site.baseurl }}.pdf">
 
