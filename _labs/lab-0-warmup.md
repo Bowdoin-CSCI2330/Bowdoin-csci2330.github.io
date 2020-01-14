@@ -1,5 +1,5 @@
 ---
-title: Lab 0 - UNIX/Linux/Linux Warmup
+title: Lab 0 - UNIX/Linux Warmup
 assigned: 2020-01-21 08:30
 due: 2020-01-31 08:30
 collaboration_policy: Level 1
