@@ -11,9 +11,10 @@
 			"problemMatcher": {}
 		},
 		{
-			"label": "deploy",
+			"label": "publish",
 			"type": "shell",
-			"command": "make deploy",
+			"group": "build",
+			"command": "make publish",
 			"problemMatcher": {}
 		}
 	]

@@ -1,7 +1,8 @@
 
+#all: build publish
 
 build:
-	jekyll build
+	bundle exec jekyll build
 
-deploy:
+publish:
 	rsync -av --delete --exclude "scoreboard/*txt" _site/* ~/public_html/csci2330
