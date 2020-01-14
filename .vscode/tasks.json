@@ -13,7 +13,7 @@
 		{
 			"label": "deploy",
 			"type": "shell",
-			"command": "make deploy"
+			"command": "make deploy",
 			"problemMatcher": {}
 		}
 	]
