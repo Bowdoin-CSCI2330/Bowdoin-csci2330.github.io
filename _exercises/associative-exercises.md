@@ -3,7 +3,7 @@ title: Associative Exercises
 description: Working with associative arrays for caching.
 order: 7
 ---
-Printable [PDF version]({{ page.id }}.pdf).
+Printable [PDF version]({{ page.id | prepend: site.baseurl }}.pdf).
 
 1. Consider an associative cache of effective size `C` bytes (i.e., the number of data bytes the cache can hold), where `S` is the number of sets, `E` is the number of lines per set, and `B` is the block size in bytes. Write an expression for `E` in terms of `S`, `B`, and/or `C`. You may find it easier to first write an expression for `C` using the other terms.
 

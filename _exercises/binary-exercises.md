@@ -3,7 +3,7 @@ title: Binary Exercises
 description: Working with binary data and numbers.
 order: 1
 ---
-Printable [PDF version]({{ page.id }}.pdf).
+Printable [PDF version]({{ page.id | prepend: site.baseurl }}.pdf).
 
 In the following exercises, assume 8-bit data types unless otherwise noted.
 

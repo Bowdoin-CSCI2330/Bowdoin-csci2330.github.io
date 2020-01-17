@@ -3,7 +3,7 @@ title: Logic Exercises
 description: Using logic to show true and false of expressions.
 order: 3
 ---
-Printable [PDF version]({{ page.id }}.pdf).
+Printable [PDF version]({{ page.id | prepend: site.baseurl }}.pdf).
 
 Let x be some signed int and let `ux` be some unsigned int. For each of the statements below, decide whether the statement is always true or possibly false. If the latter, find a counterexample to demonstrate. Hint: <code class="highlighter-rouge">T<sub>min</sub></code> is often a good counterexample.
 

@@ -3,7 +3,7 @@ title: Caching Exercises
 description: Evaluating how caching affects system performance.
 order: 6
 ---
-Printable [PDF version]({{ page.id }}.pdf).
+Printable [PDF version]({{ page.id | prepend: site.baseurl }}.pdf).
 
 <style type="text/css">
     .sibling + table {

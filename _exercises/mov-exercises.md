@@ -3,7 +3,7 @@ title: MOV Exercises
 description: x86-64 data movement and addressing.
 order: 5
 ---
-Printable [PDF version]({{ page.id }}.pdf).
+Printable [PDF version]({{ page.id | prepend: site.baseurl }}.pdf).
 
 <style type="text/css">
     .tight-table + table {

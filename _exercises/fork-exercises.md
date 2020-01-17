@@ -3,7 +3,7 @@ title: Fork Exercises
 description: Using the UNIX fork() with parents and children.
 order: 7
 ---
-Printable [PDF version]({{ page.id }}.pdf).
+Printable [PDF version]({{ page.id | prepend: site.baseurl }}.pdf).
 
 Consider the following snippet of code using `fork()`:
 

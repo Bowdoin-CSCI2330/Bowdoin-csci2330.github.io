@@ -4,7 +4,7 @@ description: Understanding how data is represented on a computer.
 order: 2
 ---
 
-Printable [PDF version]({{ page.id }}.pdf).
+Printable [PDF version]({{ page.id | prepend: site.baseurl }}.pdf).
 
 Fill in the table below listing the smallest and largest representable values using the specified representation.
 

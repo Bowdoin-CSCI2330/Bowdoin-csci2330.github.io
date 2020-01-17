@@ -3,7 +3,7 @@ title: Floating Point Exercises
 description: Working with floating point numbers in binary.
 order: 4
 ---
-Printable [PDF version]({{ page.id }}.pdf).
+Printable [PDF version]({{ page.id | prepend: site.baseurl }}.pdf).
 
 1. Using our toy 8-bit floating point representation (with `k=4` exponent bits and 3 fractional bits), convert `00110100` into a decimal value.
 

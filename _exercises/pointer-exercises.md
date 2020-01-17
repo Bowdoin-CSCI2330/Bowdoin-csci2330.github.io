@@ -3,7 +3,7 @@ title: Pointer Exercises
 description: Using pointers to memory to find what they refer to.
 order: 5
 ---
-Printable [PDF version]({{ page.id }}.pdf).
+Printable [PDF version]({{ page.id | prepend: site.baseurl }}.pdf).
 
 <style type="text/css">
     img {
