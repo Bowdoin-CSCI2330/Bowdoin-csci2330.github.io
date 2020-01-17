@@ -1,5 +1,5 @@
 
-#all: build publish
+all: build publish
 
 build:
 	bundle exec jekyll build
