@@ -4,14 +4,26 @@
   hours: T-Th-F 10-11am or by appointment
   office: 112 H-L
 
-- name: Stu Dent
+- name: Joshua Lin
+  email: ta@invalid.bowdoin.edu
   role: ta
-  email: student@bowdoin.edu
-  hours: M-W-T 5-8pm
+  hours: TBD
   office: 224 Searles
 
-- name: Brittany Echols
+- name: Pauline Unietis
+  email: ta@invalid.bowdoin.edu
   role: ta
-  email: student@bowdoin.edu
-  hours: M-W-T 5-8pm
-  office: 224 Searles  
+  hours: TBD
+  office: 224 Searles
+
+- name: Rose Xi
+  email: ta@invalid.bowdoin.edu
+  role: ta
+  hours: TBD
+  office: 224 Searles
+
+- name: Steven Xu
+  email: ta@invalid.bowdoin.edu
+  role: ta
+  hours: TBD
+  office: 224 Searles
