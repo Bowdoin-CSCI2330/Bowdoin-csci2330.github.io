@@ -21,7 +21,7 @@ scoreboard: /scoreboard/datalab.html
 
 # These files/directories will not be processed.
 # Enable the 'scoreboard.md' when 
-exclude:              ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/", "scripts", "projects.md", "samples.md", "scoreboard.md", "Makefile"]
+exclude:              ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/", "scripts", "projects.md", "scoreboard.md", "Makefile"]
 
 
 collections:

@@ -6,7 +6,6 @@ layout: default
 # Sample Code
 
 <div class="samples">
-	{{ site.samples }}
 	<ul class="post-list">
 		{% assign samples = site.samples | where: "hidden", "false" | sort: 'order' %}
 		{% for sample in samples %}
