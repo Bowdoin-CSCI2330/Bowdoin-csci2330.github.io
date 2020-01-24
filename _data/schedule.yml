@@ -2,37 +2,37 @@
   day: 21
   date: "2020-01-21 08:30"
   meeting: 1
-  topic: "[Introduction](notes/introduction), [Systems Tour](notes/system-tour)"
+  topic: "[Introduction](notes/introduction)"
   reading: "Ch. 1 (skim)"
 
 - month: 1
   day: 23
   date: "2020-01-23 08:30"
   meeting: 2
-  topic: "Bits and Binary"
+  topic: "[A brief Systems Tour](notes/system-tour)"
   reading: "Ch. 2.1"
-  notes: "[binary-exercises](exercises/binary-exercises)"
 
 - month: 1
   day: 24
   date: "2020-01-24 08:30"
   meeting: L0
-  topic: "Unix Warmup"
+  topic: "UNIX/Linux Warmup"
 
 - month: 1
   day: 28
   date: "2020-01-28 08:30"
   meeting: 3
-  topic: "Data Representation: Ints"
-  reading: "Ch. 2.2"
-  notes: "[representation-exercises](exercises/representation-exercises)"
+  topic: Bits and Binary"
+  reading: "Ch. 2.1, [Characters, Symbols and the Unicode Miracle - Computerphile](https://youtu.be/MijmeoH9LT4)"
+  notes: "[binary-exercises](exercises/binary-exercises)"
 
 - month: 1
   day: 30
   date: "2020-01-30 08:30"
   meeting: 4
   topic: "Data Representation: Ints"
-  reading: "Ch. 2.3"
+  reading: "Ch. 2.2-2.3"
+  notes: "[representation-exercises](exercises/representation-exercises)"
 
 - month: 1
   day: 31
