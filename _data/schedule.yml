@@ -22,7 +22,7 @@
   day: 28
   date: "2020-01-28 08:30"
   meeting: 3
-  topic: Bits and Binary"
+  topic: "[Bits and Binary](notes/representation)"
   reading: "Ch. 2.1, [Characters, Symbols and the Unicode Miracle - Computerphile](https://youtu.be/MijmeoH9LT4)"
   notes: "[binary-exercises](exercises/binary-exercises)"
 
@@ -30,7 +30,7 @@
   day: 30
   date: "2020-01-30 08:30"
   meeting: 4
-  topic: "Data Representation: Ints"
+  topic: "[Data Representation: Ints](notes/representation)"
   reading: "Ch. 2.2-2.3"
   notes: "[representation-exercises](exercises/representation-exercises)"
 
@@ -38,21 +38,21 @@
   day: 31
   date: "2020-01-31 08:30"
   meeting: L1
-  topic: "A Bit Puzzling"
+  topic: "[A Bit Puzzling](labs/lab-1-datalab)"
   reading: "[Lab 0 Due](labs/lab-0-warmup)"
 
 - month: 2
   day: 4
   date: "2020-02-04 08:30"
   meeting: 5
-  topic: "Signed vs Unsigned, Integer Logic"
+  topic: "[Signed vs Unsigned, Integer Logic](notes/representation)"
   notes: "[logic-exercises](exercises/logic-exercises)"
 
 - month: 2
   day: 6
   date: "2020-02-06 08:30"
   meeting: 6
-  topic: "Floating-Point Data, Memory"
+  topic: "[Floating-Point Data, Memory](notes/representation)"
   reading: "Ch. 2.4"
   notes: "[fp-exercises](exercises/fp-exercises)"
 
@@ -60,7 +60,7 @@
   day: 7
   date: "2020-02-07 08:30"
   meeting: L1
-  topic: "A Bit Puzzling (cont)"
+  topic: "[A Bit Puzzling (cont)](labs/lab-1-datalab)"
 
 - month: 2
   day: 11
@@ -75,6 +75,7 @@
   date: "2020-02-13 08:30"
   meeting: 8
   topic: "Programming with Memory"
+  reading: "[Lab 1 Due](labs/lab-1-datalab)"
   notes: "[stringtest.c](samples/stringtest.c), [pointertest.c](samples/pointertest.c)"
 
 - month: 2
@@ -82,7 +83,6 @@
   date: "2020-02-14 08:30"
   meeting: L2
   topic: "Program Pointers"
-  reading: "[Lab 1 Due](labs/lab-1-datalab)"
   notes: "Debugging Practice Programs, [GDB Tutorial](https://www.cs.umd.edu/~srhuang/teaching/cmsc212/gdb-tutorial-handout.pdf)"
 
 - month: 2
@@ -116,13 +116,13 @@
 - month: 2
   day: 27
   date: "2020-02-27 08:30"
+  reading: "[Lab 2 Due](labs/lab-2-pointers)"
 
 - month: 2
   day: 28
   date: "2020-02-28 08:30"
   meeting: L3
   topic: BitBombs
-  reading: "[Lab 2 Due](labs/lab-2-pointers)"
 
 - month: 3
   day: 3
@@ -204,6 +204,7 @@
   day: 2
   date: "2020-04-02 08:30"
   meeting: 17
+  reading: "[Lab 3 Due](labs/lab-3-bitbomb)"
   topic: "Return-Oriented Programming"
 
 - month: 4
@@ -211,7 +212,6 @@
   date: "2020-04-03 08:30"
   meeting: L4
   topic: "Byte Stacker"
-  reading: "[Lab 3 Due](labs/lab-3-bitbomb)"
 
 - month: 4
   day: 7
@@ -246,14 +246,13 @@
   date: "2020-04-16 08:30"
   meeting: 21
   topic: "Exceptional Control Flow"
-  reading: "Ch. 8.1-8.3"
+  reading: "[Lab 4 Due](labs/lab-4-byte-stacker), Ch. 8.1-8.3"
 
 - month: 4
   day: 17
   date: "2020-04-17 08:30"
   meeting: L5
   topic: "Make Some Cache"
-  reading: "[Lab 4 Due](labs/lab-4-byte-stacker)"
 
 - month: 4
   day: 21
@@ -285,8 +284,8 @@
   day: 30
   date: "2020-04-30 08:30"
   meeting: L6
-  topic: "The Bowdoin Shell"
   reading: "[Lab 5 Due](labs/lab-5-cache)"
+  topic: "The Bowdoin Shell"
 
 - month: 5
   day: 1
