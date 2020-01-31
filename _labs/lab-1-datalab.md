@@ -156,7 +156,7 @@ The script will output an auto-generated score for each puzzle out of 1-3 possib
     Non-includable file <command-line> included from includable file /usr/include/stdc-predef.h.
     ```
 
-* Don’t include the `<stdio.h>` header file in your puzzles.c file, as it confuses `dlc` and will result in non-intuitive error messages. You can still use `printf()` for debugging without including the <stdio.h> header, although `gcc` will print a warning that you can ignore. Here's a [quick tutorial on `printf()`](http://alvinalexander.com/programming/printf-format-cheat-sheet) if you haven't used it before (usage in C is basically identical to the Perl examples shown there).
+* Don’t include the `<stdio.h>` header file in your `bits.c` file, as it confuses `dlc` and will result in non-intuitive error messages. You can still use `printf()` for debugging without including the <stdio.h> header, although `gcc` will print a warning that you can ignore. Here's a [quick tutorial on `printf()`](http://alvinalexander.com/programming/printf-format-cheat-sheet) if you haven't used it before (usage in C is basically identical to the Perl examples shown there).
 
 * The `dlc` program enforces a stricter form of C declarations than normally enforced by `gcc`. In particular, within a given block of code (i.e., as delimited by a set of curly braces), all variable declarations must come before all other statements. For example, the following code (while valid C) will not pass dlc:
 
