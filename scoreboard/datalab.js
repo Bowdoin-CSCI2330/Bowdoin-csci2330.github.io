@@ -82,15 +82,21 @@ function parseScoreFile(scoreFile) {
     // compute score for each puzzle
     for (userid in scoresByUser) {
         user = scoresByUser[userid];
+        user.scoreIsValid = true;
         user.isWinner = true;
         totalScore = 0;
         for (puzzleName in user.puzzles) {
             puzzleScore = instructor.puzzles[puzzleName].ops - user.puzzles[puzzleName].ops;
+            if (user.puzzles[puzzleName].ops == BIGNUM) {
+                user.scoreIsValid = false;
+            }
+
             totalScore += puzzleScore;
             if (user.isWinner && puzzleScore < 0) {
                 user.isWinner = false;
             }
         }
+
         user.score = totalScore;
     }
 
@@ -138,21 +144,37 @@ function make_datatable(table) {
             }
         }, {
             'targets': 1,
-            'data': 'score',
+            //'data': 'score',
+            'data': function(r, t, s, m) {
+                if (!r.scoreIsValid) {
+                    return "";
+                    // return "---";
+                } 
+
+                return r.score;
+            },
             "createdCell": function(td, cellData, rowData, row, col) {
                 $(td).addClass('center');
             }
         }, {
             "targets": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
             "data": function(r, t, s, m) {
+                if (r.puzzles[m.col - 2].ops == BIGNUM) {
+                    // return "---";
+                    return "";
+                } 
+
                 return r.puzzles[m.col - 2].ops
             },
             "createdCell": function(td, cellData, rowData, row, col) {
                 puzzleIndex = col - 2;
-                if (cellData < instructor.puzzles[puzzleIndex].ops) {
-                    $(td).addClass('score_beat');
-                } else if (cellData == instructor.puzzles[puzzleIndex].ops) {
-                    $(td).addClass('score_match');
+
+                if (cellData !== "") {
+                    if (cellData < instructor.puzzles[puzzleIndex].ops) {
+                        $(td).addClass('score_beat');
+                    } else if (cellData == instructor.puzzles[puzzleIndex].ops) {
+                        $(td).addClass('score_match');
+                    }
                 }
 
                 $(td).addClass('center');
