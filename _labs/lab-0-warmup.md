@@ -49,7 +49,7 @@ After you have a GitHub account, you are ready to *Start the Lab*.
 
 ### Start The Lab (in Blackboard)
 
-Log in to [Blackboard[blackboard], choose this course, and find the Lab Assignment under Labs, this one is **Lab 0 - UNIX/Linux Warmup** and at this point should be the only one available. When you open the assignment you will find a link to **Start the Lab**, that's the link you want. Click it, and you will be redirected to [GitHub][github] and walked through the process of *accepting* the assignment and creating your private repository for the lab. When this process is done you will end up looking at the [GitHub][github] page for your lab repository. There should be just one file there, `README.md` which is a brief description of the lab assignment. In later labs there will be more *starter* code that you will work with.
+Log in to [Blackboard][blackboard], choose this course, and find the Lab Assignment under Labs, this one is **Lab 0 - UNIX/Linux Warmup** and at this point should be the only one available. When you open the assignment you will find a link to **Start the Lab**, that's the link you want. Click it, and you will be redirected to [GitHub][github] and walked through the process of *accepting* the assignment and creating your private repository for the lab. When this process is done you will end up looking at the [GitHub][github] page for your lab repository. There should be just one file there, `README.md` which is a brief description of the lab assignment. In later labs there will be more *starter* code that you will work with.
 
 ### Get the Repository URL (in GitHub)
 
