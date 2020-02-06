@@ -9,7 +9,6 @@ This lab is designed to familiarize you with the bit-level representations of da
 
 <!--more-->
 
-
 ## Overview
 
 In this lab, you will modify a single C source file, `bits.c`, which is included in the starter files. This file contains the skeleton for a set of 15 programming puzzles. Each puzzle is a function which should compute a simple operation (e.g., returning whether a given number is positive or negative). Your task is to complete each function using a highly restricted subset of the full C language. In particular, all of the following are prohibited to use in your functions:
