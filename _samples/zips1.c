@@ -23,4 +23,5 @@ int main(int argc, char **argv) {
 	printf("\n");
 
 	free(zip);
+	return 0;
 }
