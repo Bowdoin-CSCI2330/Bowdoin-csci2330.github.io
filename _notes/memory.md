@@ -1,7 +1,7 @@
 ---
-title: Representation
-excerpt: Data representation, binary, decimal, hex, integers, and floating point.
-order: 3
+title: Memory
+excerpt: The details of how C uses memory and pointers.
+order: 4
 ---
 <meta http-equiv="refresh" content="0;url={{ page.id | prepend: site.baseurl }}.pdf">
 
