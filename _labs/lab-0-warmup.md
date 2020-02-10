@@ -35,7 +35,7 @@ The UNIX/Linux tutorial above had you working on Bowdoin's campus-wide Linux mac
 
 In this second part, you will start in [Blackboard[blackboard] to *accept an assignment*, get set up with [git][git] and [GitHub][github], and then then complete a few simple tasks in UNIX/Linux to check your understanding. The main objective here is to make sure all systems issues are resolved now, and not right before the first *real* lab is due.
 
-If you are unsure how to accomplish any of the tasks in this part, your first stop should be the UNIX/Linux tutorial above. After that, you should consult Piazza, the instructor, TAs, etc.
+If you are unsure how to accomplish any of the tasks in this part, your first stop should be the UNIX/Linux tutorial above. After that, you should consult Slack, the instructor, TAs, etc.
 
 ## Git and GitHub
 

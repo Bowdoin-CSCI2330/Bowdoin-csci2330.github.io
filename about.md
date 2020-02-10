@@ -67,7 +67,7 @@ Although Friday is designated as *lab*, we will adjust as needed by the schedule
 
 ## Discussion Forum
 
-We will use [Piazza]({{ site.discussion_url }}) to facilitate discussion outside of class. In general, you should prefer posting to Piazza over sending me email, as it will allow your classmates to both see and answer your questions, possibly quicker than I alone can (though you can also post privately such that only I can see your question).
+We will use [Slack]({{ site.discussion_url }}) to facilitate discussion outside of class. In general, you should prefer posting to Slack over sending me email, as it will allow your classmates to both see and answer your questions, possibly quicker than I alone can (though you can also post privately such that only I can see your question).
 
 ## Textbook
 There is one primary textbook that you should acquire:

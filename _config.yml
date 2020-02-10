@@ -13,7 +13,7 @@ future: false
 timezone: America/New York
 baseurl: /~houser/csci2330/
 
-discussion_url: https://piazza.com/class/jyori0lyd8r63n
+discussion_url: https://bowdoinsystems.slack.com
 
 # This is the current scoreboard that /scoreboard will redirect to.
 # Change at the start of each lab.

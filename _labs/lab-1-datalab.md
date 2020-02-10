@@ -59,7 +59,7 @@ Summaries of the 15 puzzles are given below. Complete details of each puzzle are
 | `addOK`         | 3         | Determine if can compute `x+y` without overflow |
 | `bitMask`       | 3         | Generate a mask consisting of all `1`'s  |
 | `logicalNeg`    | 4         | Implement the `!` operator, using all of the legal operators except `!` |
-| `bitCount`      | 4         | Return count of number of `1`'s in word |
+| ~~`bitCount`~~  | ~~4~~     | ~~Return count of number of `1`'s in word~~ (removed) |
 | `floatPower2`   | 4         | Return bit-level equivalent of the expression `2.0^x` |
 | ---           | ---       | ---           |
 
