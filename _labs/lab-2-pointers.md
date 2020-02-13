@@ -1,6 +1,6 @@
 ---
 title: Lab 2 - Program Pointers
-assigned: 2020-02-14 00:00
+assigned: 2020-02-13 00:00
 due: 2020-02-27 23:59
 hidden: false
 collaboration_policy: Level 1
@@ -159,24 +159,31 @@ For general advice about proper program design and style, consult the [CSCI 2330
 In addition to following good design and style principles, you are required to follow the following coding rules for this assignment:
 
 1. *You may not use any standard C string processing functions*. Using `printf()` is fine, but anything declared in `string.h` is not. Instead of using such functions, you must do all your string processing yourself (from scratch).
+
 2. *You may not use any array notation in `command.c`* (but it is fine to do so in `command_test.c`). Instead, you should use idiomatic pointer style for working with your strings, which is described below. Practically speaking, this restriction is just a notational difference, but will force you to think about your structures explicitly in terms of pointers. More details are provided in the next section.
-3. Your code must follow standard *memory safety rules*:
 
-* No use of uninitialized memory contents.
-* No out-of-bounds accesses.
-* `free()` only called on blocks previously returned by `malloc()`, and only once per block.
+3. Your code must follow standard *memory safety rules*. *Note:* violating one of these rules does not necessarily mean that your program will crash (e.g., if you access uninitialized memory), so the absence of crashes does not necessarily mean that you are following all the rules. Use the valgrind tool to check for many kinds of memory errors.
 
-Note that violating one of these rules does not necessarily mean that your program will crash (e.g., if you access uninitialized memory), so the absence of crashes does not necessarily mean that you are following all the rules. Use the valgrind tool to check for many kinds of memory errors.
+    * No use of uninitialized memory contents.
+
+    * No out-of-bounds accesses.
+
+    * `free()` only called on blocks previously returned by `malloc()`, and only once per block.
 
 4. You should abide by these usage conventions within your library:
 
-* Clients of the command library (such as `command_test.c`) own and manage the memory representing command line strings. This means that command library functions must never free nor mutate command line strings (i.e., don't change any string that's passed to one of your functions), with the exception of `command_free()`.
-* Command array structures must be allocated dynamically using `malloc()` within `command_parse()` and returned to the client. Clients will not mutate command array structures once they are returned.
-* Your library functions should not allocate any memory except that which is returned as part of the command array structure.
-* You may assume that clients will call `command_free()` at most once on a given command array structure.
-* Assuming that `command_free()` is eventually called on every command array structure, all memory allocated by the command library functions should be freed. In other words, your code should not leak memory.
+    * Clients of the command library (such as `command_test.c`) own and manage the memory representing command line strings. This means that command library functions must never free nor mutate command line strings (i.e., don't change any string that's passed to one of your functions), with the exception of `command_free()`.
+
+    * Command array structures must be allocated dynamically using `malloc()` within `command_parse()` and returned to the client. Clients will not mutate command array structures once they are returned.
+
+    * Your library functions should not allocate any memory except that which is returned as part of the command array structure.
+
+    * You may assume that clients will call `command_free()` at most once on a given command array structure.
+
+    * Assuming that `command_free()` is eventually called on every command array structure, all memory allocated by the command library functions should be freed. In other words, your code should not leak memory.
 
 5. Don't make any assumptions about data type sizes in your program. For example, remember that while an `int` is usually 32 bits, this isn't required by C and may vary across machines. Instead, use the C `sizeof()` operator whenever you need the number of bytes in a particular data type. For instance, you should write `sizeof(int)` instead of `4`, and `sizeof(char)` instead of `1`, and so forth.
+
 6. Lastly, *treat compiler warnings like errors*. Your code should not output any warnings when compiled, even if these warnings do not prevent the program from working.
 
 ## Idiomatic Pointer Style
@@ -221,11 +228,9 @@ To reiterate the prohibition on array indexing: your final `command.c` code shou
 Since there are several components of the library, here is a suggested plan of action for tackling them:
 
 1. Add several more hard-coded command array test cases to `command_test.c` These are the lines of the form:
-
 ```
 static char* NAME[N] = {"str1", "str2", ..., "strN"}
 ```
-
 Two example command arrays are already included in `command_test.c`. The purpose of writing hard-coded command arrays here is that it lets you test the rest of the program minus the string parsing component (the command_parse function).
 
 2. Within `command.c`, implement and test command_show and command_print. These functions should only be a few lines of code each. Test them on the constant, statically allocated command arrays in `command_test.c`.
@@ -234,9 +239,11 @@ Two example command arrays are already included in `command_test.c`. The purpose
 
 4. Within `command.c`, implement and test command_parse in stages, testing each stage on several inputs and committing a working version before continuing:
 
-  * Count the number of words in line and detect use of `&`, returning `NULL` for invalid commands and marking the foreground/background status for valid commands.
-  * Allocate the top-level command array.
-  * For each each word in `line`, allocate properly sized space to hold the word as a null-terminated string, copy the word into this space, and save it in the command array.
+    * Count the number of words in line and detect use of `&`, returning `NULL` for invalid commands and marking the foreground/background status for valid commands.
+
+    * Allocate the top-level command array.
+
+    * For each each word in `line`, allocate properly sized space to hold the word as a null-terminated string, copy the word into this space, and save it in the command array.
 
 5. Implement and test `command_free()`.
 
@@ -257,8 +264,8 @@ Minimize print-based debugging (e.g., `printf()`) in favor of the other tools me
 In C, a function is allowed to be used only after (that is, later in the file than) its declaration. This behavior differs from Java, which allows you to refer to later methods from earlier methods. When declaring helper functions, you can do one of a few things to deal with this restriction:
 
 1. Just declare your helper function before the functions that use it.
-2. Write a function *header* earlier in the file, then the actual definition later in the file. The function header just describes the name and type of the function, much like an interface method in Java. For example:
 
+2. Write a function *header* earlier in the file, then the actual definition later in the file. The function header just describes the name and type of the function, much like an interface method in Java. For example:
 ```
         // A function header declares that such a function exists,
         // and will be implemented elsewhere.
@@ -282,8 +289,7 @@ In C, a function is allowed to be used only after (that is, later in the file th
             return 7;
         }
 ```
-
-  If the functions would likely get used elsewhere, then put the header in a header file, which is a file ending in `.h` that contains only function headers (for related functions) and data type declarations. For example, if you added another general function (not just a helper function) for manipulating commands, it would be best to place a function header for it with the other function headers in `command.h` so that users of your command library can call it. Header files are widely used in most C programs.
+If the functions would likely get used elsewhere, then put the header in a header file, which is a file ending in `.h` that contains only function headers (for related functions) and data type declarations. For example, if you added another general function (not just a helper function) for manipulating commands, it would be best to place a function header for it with the other function headers in `command.h` so that users of your command library can call it. Header files are widely used in most C programs.
 
 3. Header files are included (essentially programmatically copy-pasted) by the `#include <>` directive you often see at the top of C source files.
 
