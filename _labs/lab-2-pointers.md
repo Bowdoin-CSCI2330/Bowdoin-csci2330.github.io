@@ -8,6 +8,8 @@ group_policy: Pair-optional (you may work in a group of 2 if you wish)
 ---
 The main objective of this lab is to make you familiar with the memory model used by computers, primarily via the concept of pointers. Your task is to write a shell command parser in C. Your program will implement one part of the shell's functionality: splitting a command line into its meaningful parts. While conceptually simple, this lab will also demonstrate some of the "under the hood" complexity that is involved in managing strings.
 
+<!--more-->
+
 A secondary goal of this lab is to give you experience programming to a specification. A program specification (in this case, this writeup) says exactly how a program is supposed to behave. Read the specification closely and literally! You may think that your program is "done", when in fact it fails many of the tests I use to evaluate it due to some aspect of the specification that may have seemed insignificant to you. Assume that all aspects of the specification are important and be sure that your program follows them precisely! This advice applies more generally in the real-world as well, where often you are implementing a program to follow someone else's specification. Read, reread, and test your code against the complete specification -- don't fall into the trap of running a test or two, saying "ok, it seems to work" and then calling it quits.
 
 ## Lab Overview
