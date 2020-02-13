@@ -97,7 +97,7 @@
   date: "2020-02-20 08:30"
   meeting: 10
   topic: "Arithmetic, Condition Codes"
-  reading: "Ch. 3.5"
+  reading: "Ch. 3.5, [Mini Lab Suggested](labs/lab-1.5-debugging)"
   notes: "[mov-exercises](exercises/mov-exercises)"
 
 - month: 2
