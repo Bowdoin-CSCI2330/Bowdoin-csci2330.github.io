@@ -83,7 +83,7 @@
   date: "2020-02-14 08:30"
   meeting: L2
   topic: "[Program Pointers](notes/memory)"
-  notes: "Debugging Practice Programs, [GDB Tutorial](https://www.cs.umd.edu/~srhuang/teaching/cmsc212/gdb-tutorial-handout.pdf)"
+  notes: "[Debugging Practice Programs](labs/lab-1.5-debugging), [GDB Tutorial](https://www.cs.umd.edu/~srhuang/teaching/cmsc212/gdb-tutorial-handout.pdf)"
 
 - month: 2
   day: 18
