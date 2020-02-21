@@ -82,66 +82,74 @@
   day: 14
   date: "2020-02-14 08:30"
   meeting: L2
-  topic: "[Program Pointers](notes/memory)"
-  notes: "[Debugging Practice Programs](labs/lab-1.5-debugging), [GDB Tutorial](https://www.cs.umd.edu/~srhuang/teaching/cmsc212/gdb-tutorial-handout.pdf)"
+  topic: "[Programming with Memory](notes/memory)"
+  reading: "[Lab 2](labs/lab-2-pointers)"
+  notes: "[stringtest.c](samples/stringtest.c), [pointertest.c](samples/pointertest.c)"
 
+# Week 5
 - month: 2
   day: 18
-  date: "2020-02-18 08:30"
   meeting: 9
-  topic: "x86-64 ISA, Data Movement"
-  reading: "Ch. 3.1-3.4"
+  date: "2020-02-18 08:30"
+  topic: "[Programming with Memory](notes/memory)"
+  notes: "[stringtest.c](samples/stringtest.c), [pointertest.c](samples/pointertest.c)"
 
 - month: 2
   day: 20
   date: "2020-02-20 08:30"
-  meeting: 10
-  topic: "Arithmetic, Condition Codes"
-  reading: "Ch. 3.5, [Mini Lab Suggested](labs/lab-1.5-debugging)"
-  notes: "[mov-exercises](exercises/mov-exercises)"
+  meeting: L2
+  topic: "[Program Pointers](notes/memory)"
+  notes: "[Debugging Practice Programs](labs/lab-1.5-debugging), [GDB Tutorial](https://www.cs.umd.edu/~srhuang/teaching/cmsc212/gdb-tutorial-handout.pdf)"
 
 - month: 2
   day: 21
+  meeting: 10
   date: "2020-02-21 08:30"
-  meeting: L2
-  topic: "Program Pointers (cont)"
+  topic: "[x86-64 ISA, Data Movement](notes/x86-basics)"
+  reading: "Ch. 3.1-3.4"
+  notes: "[mov-exercises](exercises/mov-exercises)"
 
+# Week 6
 - month: 2
   day: 25
   date: "2020-02-25 08:30"
   meeting: 11
-  topic: "Control Flow: Conditionals"
-  reading: "Ch. 3.6"
+  topic: "[Arithmetic, Condition Codes](notes/x86-basics)"
+  reading: "Ch. 3.5, [Mini Lab Suggested](labs/lab-1.5-debugging)"
 
 - month: 2
   day: 27
   date: "2020-02-27 08:30"
-  reading: "[Lab 2 Due](labs/lab-2-pointers)"
+  meeting: 12
+  topic: "Control Flow: Conditionals"
+  reading: "Ch. 3.6, [Lab 2 Due](labs/lab-2-pointers)"
 
 - month: 2
   day: 28
   date: "2020-02-28 08:30"
-  meeting: L3
-  topic: BitBombs
+  meeting: 13
+  topic: "Control Flow: Loops & Switches"
 
+# Week 7
 - month: 3
   day: 3
   date: "2020-03-03 08:30"
-  meeting: 12
-  topic: "Control Flow: Loops & Switches"
+  meeting: 14
+  topic: "Control Flow: Procedures"
+  reading: "Ch. 3.7"
 
 - month: 3
   day: 5
   date: "2020-03-05 08:30"
-  meeting: 13
-  topic: "Control Flow: Procedures"
-  reading: "Ch. 3.7"
+  meeting: L3
+  topic: Exam Review and Lab 3 BitBombs
 
 - month: 3
   day: 6
   date: "2020-03-06 08:30"
   topic: "Midterm Exam (in lab)"
 
+# Spring Break; 2 weeks
 - month: 3
   day: 10
   date: "2020-03-10 08:30"
@@ -175,14 +183,14 @@
 - month: 3
   day: 24
   date: "2020-03-24 08:30"
-  meeting: 14
+  meeting: 15
   topic: "Saved Registers & Arrays"
   reading: "Ch. 3.8"
 
 - month: 3
   day: 26
   date: "2020-03-26 08:30"
-  meeting: 15
+  meeting: 16
   topic: "Structs & Floating Point"
   reading: "Ch. 3.9"
 
@@ -195,7 +203,7 @@
 - month: 3
   day: 31
   date: "2020-03-31 08:30"
-  meeting: 16
+  meeting: 17
   topic: "Buffer Overflow & Code Injection"
   reading: "Ch. 3.10"
   notes: "[buftest.c](samples/buftest.c), [exploit.c](samples/exploit.c)"
@@ -203,7 +211,7 @@
 - month: 4
   day: 2
   date: "2020-04-02 08:30"
-  meeting: 17
+  meeting: 18
   reading: "[Lab 3 Due](labs/lab-3-bitbomb)"
   topic: "Return-Oriented Programming"
 
@@ -216,14 +224,14 @@
 - month: 4
   day: 7
   date: "2020-04-07 08:30"
-  meeting: 18
+  meeting: 19
   topic: "Caching & The Memory Hierarchy"
   reading: "Ch. 6.2-6.3"
 
 - month: 4
   day: 9
   date: "2020-04-09 08:30"
-  meeting: 19
+  meeting: 20
   topic: "Direct-Mapped Caches"
   reading: "Ch. 6.4-6.5"
   notes: "[caching-exercises](exercises/caching-exercises)"
@@ -237,7 +245,7 @@
 - month: 4
   day: 14
   date: "2020-04-14 08:30"
-  meeting: 20
+  meeting: 21
   topic: "Associative Caches"
   notes: "[associative-exercises](exercises/associative-exercises)"
 

@@ -37,6 +37,7 @@ collections:
   samples:
     output: true
     sort_by: order
+    title: "Sample Code"
   exercises:
     output: true
     sort_by: order
@@ -64,7 +65,7 @@ defaults:
       path: ""
       type: "samples"
     values:
-      layout: "sample"
+      layout: "none"
       hidden: false
   - scope:
       path: ""
