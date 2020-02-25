@@ -1,3 +1,4 @@
+// stringtest.c - accessing strings in various ways using C
 #include <stdio.h>
 #include <string.h>
 

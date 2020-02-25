@@ -1,4 +1,4 @@
-# add-args.s - add two numbers on the command line
+# swap.s - swap x and y in asm
 #
 #
 # 64-bit

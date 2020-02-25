@@ -1,3 +1,4 @@
+// zips1.c - allocating and using an array of arrays (int **) 
 #include <stdio.h>
 #include <stdlib.h>
 

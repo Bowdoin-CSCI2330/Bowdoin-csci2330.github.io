@@ -1,4 +1,4 @@
-# hello.s - Write hello world to terminal
+# hello.s - Write hello world to terminal in asm
 #
 #
 	.global	main

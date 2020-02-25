@@ -1,4 +1,4 @@
-# hello.s - Write hello world to terminal
+# hello-printf.s - Write hello world to terminal in asm using printf()
 #
 #
 # 64-bit

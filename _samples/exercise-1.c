@@ -1,3 +1,4 @@
+// exercise-1-8.c - Exercise 1, part c from text
 #include <stdio.h>
 #include <stdbool.h>
 

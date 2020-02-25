@@ -1,3 +1,4 @@
+// show-args.c - accessing command line arguments (char **) in C
 #include <stdio.h>
 
 // gcc -g -std=c99 -o show-args show-args.c

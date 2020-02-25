@@ -1,8 +1,7 @@
+// thread.c - A demo of pthreads in C.
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
-
-// A demo of pthreads in C.
 
 #define TOTAL_WORK (long) 1000000000
 

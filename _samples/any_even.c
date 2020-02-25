@@ -1,3 +1,4 @@
+// any_even.c - return 1 if any even-numbered bit in word set to 1
 #include <stdio.h>
 #include <stdlib.h>
 /* 

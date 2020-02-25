@@ -1,3 +1,4 @@
+// highbit.c -- show high bits of word in C
 #include <stdio.h>
 
 int main(int argc, char **argv) {

@@ -1,3 +1,4 @@
+// pointertest.c - some experiments with pointers in C
 #include <stdio.h>
 #include <stdlib.h>
 

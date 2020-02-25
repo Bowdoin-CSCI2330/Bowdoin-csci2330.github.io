@@ -1,4 +1,4 @@
-# hello.s - Write hello world to terminal
+# count-return.s - simple example of asm arithmetic functions
 #
 #
 # 64-bit

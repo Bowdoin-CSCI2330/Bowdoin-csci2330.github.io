@@ -1,3 +1,4 @@
+// buftest.c - sample using char buffer
 #include <stdio.h>
 
 void dummy() {

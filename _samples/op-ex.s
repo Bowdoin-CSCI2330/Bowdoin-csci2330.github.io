@@ -1,4 +1,4 @@
-# op-ex.s 
+# op-ex.s - solutions to in-class operations exercises
 #
 
 # 64-bit

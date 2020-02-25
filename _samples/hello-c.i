@@ -1,3 +1,4 @@
+// hello-c.i - GCC preprocessor output from hello-c.c
 # 1 "hello.c"
 # 1 "<built-in>"
 # 1 "<command-line>"

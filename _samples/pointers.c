@@ -1,3 +1,4 @@
+// pointers.c - various ways to access pointed to things in C
 #include <stdio.h>
 
 void pargs(char **args) {

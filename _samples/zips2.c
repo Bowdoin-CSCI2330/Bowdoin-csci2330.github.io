@@ -1,9 +1,10 @@
+// zips2.c - allocating and using an array of arrays (int **)
+
 #include <stdio.h>
 #include <stdlib.h>
 
 #define NUM_ZIPS   3
 #define ZIP_LENGTH 5
-
 
 int *alloc_a_zip(int zip_length) {
 	int* zip = (int*) malloc(sizeof(int) * zip_length);

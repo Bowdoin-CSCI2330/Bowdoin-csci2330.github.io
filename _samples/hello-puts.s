@@ -1,5 +1,4 @@
-# hello.s - Write hello world to terminal
-#
+# hello-puts.s - Write hello world to terminal in asm using puts()
 #
 	.global	main
 	.text
