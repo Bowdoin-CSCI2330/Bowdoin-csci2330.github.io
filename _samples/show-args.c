@@ -5,7 +5,7 @@
 // gdb -tui --args ./show-args hello csci 2330
 int main(int argc, char **argv) {
 	printf("Indexed...\n");
-	for (int i = 0; i < argc; i++) {
+	for (int i = -1; i < argc; i++) {
 		printf("arg %d is %s\n", i, argv[i]);
 	}
 
