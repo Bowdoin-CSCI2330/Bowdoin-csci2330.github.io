@@ -26,7 +26,7 @@ main:
         # 1. x + 10
         mov     x, %rdi                 # x starts in %rdi
         # TODO: your code here ...
-
+        
 
 
         # print out result printf("x=%ld, y=%ld\n", total)
