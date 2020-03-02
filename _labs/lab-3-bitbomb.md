@@ -24,13 +24,21 @@ There are too many bitbombs for one person to handle, so each of you will be pro
 
 ## BitBomb Files
 
-Each of you has a set of files pertaining to your own bitbomb. You can retreive these files by executing `./get-bomb.sh` from within your checked out repository. This will download and extract a few key files that you should immediately add and commit to your repository.
+Each of you has a set of files pertaining to your own bitbomb. You can retreive these files by executing `./get-bomb.sh` from within your checked out repository. This will download and extract a subdirectory with few key files that you should immediately add and commit to your repository (add the whole directory).
 
 * `bomb`: Your unique bitbomb executable.
 * `bomb.c`: Some code that BitBombs Inc. left lying around (we think it might be useful -- but do not compile it, it will not reproduce `bomb`).
 * `codes.txt`: File in which you will write your defusal codes.
 * `descriptions.txt`: File in which you will describe your defusal solutions.
 * `ID`: File containing your unique BitBomb ID.
+
+To add the downloaded bomb directory to your repository; replace `bombN` with the bomb directory that was downloaded:
+
+```bash
+$ git add bombN
+$ git commit -a -m"Add downloaded bomb"
+$ git push
+```
 
 ## BitBomb Handling and Safety
 
