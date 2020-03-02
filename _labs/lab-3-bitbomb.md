@@ -30,7 +30,8 @@ Each of you has a set of files pertaining to your own bitbomb. You can retreive 
 * `bomb.c`: Some code that BitBombs Inc. left lying around (we think it might be useful -- but do not compile it, it will not reproduce `bomb`).
 * `codes.txt`: File in which you will write your defusal codes.
 * `descriptions.txt`: File in which you will describe your defusal solutions.
-* `ID`: File containing your unique BitBomb ID.
+* `README`: File containing information about your unique BitBomb.
+* `ID`: File containing your username.
 
 To add the downloaded bomb directory to your repository; replace `bombN` with the bomb directory that was downloaded:
 
