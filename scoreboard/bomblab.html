@@ -1,0 +1,73 @@
+---
+layout: default
+---
+<!-- jQuery -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<!-- jQuery Data Tables -->
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+
+<!-- Bootstrap Tables -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.js"></script>
+
+<!-- for tooltips -->
+<script src="https://unpkg.com/popper.js"></script>
+<script src="https://unpkg.com/tooltip.js"></script>
+
+<!-- for badges -->
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+
+<!-- Local Style and Script -->
+<link rel="stylesheet" href="scoreboard.css">
+<script type="text/javascript" src="bomblab.js"></script>
+
+<header class='header'>
+    <div class='container-fluid'>
+        <h1 class="center">Bit Bomb Scoreboard</h1>
+        <hr />
+    </div>
+</header>
+
+<div class="container-fluid">
+    <p>[phase:cnt] [1:0] [2:0] [3:0] [4:0] [5:0] [6:0] total defused = 0/0</p>
+
+    <table id="scores" class="display compact" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th colspan=7><button style="float: right;"
+                        onclick="reload_table('#scores');">Reload</button></th>
+            </tr>
+            <tr>
+                <th>Rank</th>
+                <th>Bomb #</th>
+                <th>Date</th>
+                <th>Phases Defused</th>
+                <th>Explosions</th>
+                <th>Score</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+    </table>
+    <!-- ul class="legend">
+        <li class="score_beat">RED: Score beats the Prof</li>
+        <li class="score_match">BLUE: Score ties the Prof</li>
+        <li class="score_invalid">---/NaN: Incorrect entry</li>
+    </ul -->
+
+</div>
+
+<footer class='footer'>
+    <div class='container-fluid'>
+        <hr />
+        <p>This page contains the latest information that we have received from your bomb. If your solution is marked <font color=ff0000><b>invalid</b></font>, this means your bomb reported a solution that didn't actually defuse your bomb.</p>
+    </div>
+</footer>
+
+<script type="text/javascript">
+$(document).ready(function () {
+make_datatable('#scores');
+});
+</script>
