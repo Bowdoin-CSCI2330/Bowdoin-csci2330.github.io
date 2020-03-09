@@ -1,0 +1,2 @@
+# loop-compile - script to compile loop.c to loop.s
+gcc -O0 -Wall -std=c99 -g -S loop.c

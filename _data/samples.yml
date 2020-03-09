@@ -89,3 +89,12 @@
 - file: swap.s
   description: "swap.s - swap x and y in asm"
 
+- file: loop.c
+  description: "sample loops that fail"
+
+- file: loop.s
+  description: "loop.s - sample assembly from loop.c	"
+
+- file: loop-compile
+  description: "loop-compile - script to compile loop.c to loop.s"
+

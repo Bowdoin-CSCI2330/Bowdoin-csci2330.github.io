@@ -17,7 +17,8 @@ discussion_url: https://bowdoinsystems.slack.com
 
 # This is the current scoreboard that /scoreboard will redirect to.
 # Change at the start of each lab.
-scoreboard: /scoreboard/datalab.html
+#scoreboard: /scoreboard/datalab.html
+scoreboard: /scoreboard/bomblab.html
 
 # These files/directories will not be processed.
 # Enable the 'scoreboard.md' when 
