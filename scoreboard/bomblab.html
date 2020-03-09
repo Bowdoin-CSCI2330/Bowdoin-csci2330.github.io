@@ -37,15 +37,21 @@ layout: default
     <table id="scores" class="display compact" cellspacing="0" width="100%">
         <thead>
             <tr>
-                <th colspan=7><button style="float: right;"
+                <th colspan=12><button style="float: right;"
                         onclick="reload_table('#scores');">Reload</button></th>
             </tr>
             <tr>
-                <th>Order</th>
                 <th>Bomb #</th>
                 <th>Date</th>
+                <th>Phase 1</th>
+                <th>Phase 2</th>
+                <th>Phase 3</th>
+                <th>Phase 4</th>
+                <th>Phase 5</th>
+                <th>Phase 6</th>
                 <th>Phases Defused</th>
                 <th>Explosions</th>
+                <th>Status</th>
                 <th>Score</th>
             </tr>
         </thead>
@@ -54,7 +60,7 @@ layout: default
 
 <footer class='footer'>
     <div class='container-fluid'>
-        <hr />
+        <hr /> 
         <p>This page contains the latest information that we have received about the deployed bombs. These numbers and scores may vary from the final grading of your individual Bit Bomb Lab, as this scoreboard uses a faster and less comprehensive scoring and validation routine to show near real-time statistics.</p>
     </div>
 </footer>
@@ -67,6 +73,14 @@ layout: default
 
     function reload_table(table) {
         $(table).DataTable().ajax.reload();
+    }
+
+    function phaseString(row, phase) {
+        if (row.phase_status[phase] == "defused") {
+            return "defused";
+        }
+
+        return "armed";
     }
 
     function make_datatable(table) {
@@ -85,16 +99,54 @@ layout: default
             "searching": false,
             "info": false,
             "order": [
-                [0, "asc"]
+                [11, "desc"]
             ],
             "columns": [
-                { "data": function(r,t,s,m) { return m.row + 1; } },
                 { "data": "bomb_id" },
                 { "data": "date" },
+                { "data": function (row) { return phaseString(row, 0); } },
+                { "data": function (row) { return phaseString(row, 1); } },
+                { "data": function (row) { return phaseString(row, 2); } },
+                { "data": function (row) { return phaseString(row, 3); } },
+                { "data": function (row) { return phaseString(row, 4); } },
+                { "data": function (row) { return phaseString(row, 5); } },
                 { "data": "defused" },
-                { "data": "explosions" },
+                {
+                    "data": function (row, type, set, meta) {
+                        return "💣".repeat((row.explosions / 5) + 1) + "(" + row.explosions + ")";
+                    }
+                },
+                {
+                    "data": function (row, type, set, meta) {
+                        if (row.defused >= 6) {
+                            return "Defused";
+                        }
+                        return "Armed";
+                    }
+                },
                 { "data": "score" }
-            ]
+            ],
+            "columnDefs": [
+                { 
+                    'targets': [2, 3, 4, 5, 6, 7],
+                    'createdCell': function (td, cellData, rowData, rowIndex, col) {
+                        if (cellData != "") {
+                            $(td).addClass(cellData);
+                        } else {
+                            $(td).addClass('armed');
+                        }
+                    }
+                },
+                {
+                    'targets': 10,
+                    "createdCell": function (td, cellData, rowData, row, col) {
+                        if (rowData.defused >= 6) {
+                            $(td).addClass('defused');
+                        } else {
+                            $(td).addClass('armed');
+                        }
+                    }
+                }]
         });
     }
 
