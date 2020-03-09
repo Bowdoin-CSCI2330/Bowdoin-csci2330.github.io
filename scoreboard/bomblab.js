@@ -1,57 +1,29 @@
-/*
- * Scoreboard for Project 1 Bit Hacker, CS 2330
+/* bomblab.js - parse and score bomblab score file for display in datatable
+ *
  */
 
-const INSTRUCTOR_USERID = 'houser'; // userid of The Prof
-const SCORE_URL = 'bomblab-s20.scores.txt' // URL of score log.txt to display
+// === Parse Bomb Score File ===
+function parseScoreFile(scoreFile) {
+    bombs = {};
+    scoreFile.split('\n').forEach(scoreLine => {
+        bombScore = parseScoreLine(scoreLine);
+        if (bombScore.bomb_id != undefined) {
+            updateBomb(bombScore, bombs)
+        }
+    });
 
-/*
-bomb = { bomb_id, latest_date, phases[ ], score, status }
- bombSummary = { bomb_id, date, phases_defused, explosions, score, status }
- bombScores = { {bomb_id, date, max_phase, explosions, score, status }}
-*/
+    var scores = scoreBombs(bombs);
 
-//var bombStatus = {}
-
-function updateBomb(bombScore, bombs) {
-    var bomb_id = bombScore['bomb_id'];
-
-    if (!(bomb_id in bombs)) {
-        bombs.push({ 
-            'bomb_id': bomb_id,            
-            'phases': ["", "", "", "", "", "", "", ""],
-            'explosions': 0,
-            'score': 0,
-            'status': 'invalid'
-        })
-    }
-
-    var bomb = bombs[bomb_id]
-    bomb['date'] = bombScore['date']
-
-    var phase = bombScore['phase'];
-    bomb['phases'][phase] = bombScore['status']
-
-    // count explosions
-    if (bombScore['status'] == 'exploded') {
-        bomb['explosions'] += 1;
-        bomb['score'] -= 0.5;
-    }
-} 
+    return bombs;
+};
 
 function parseScoreLine(line) {
-/*
-    foxcroft | Fri Mar  6 09: 27: 57 2020 | houser | 6IKa4DlcrnouDGjDZpeP | s20 | 1: defused: 1: The moon unit will be divided into two divisions.
-        foxcroft | Fri Mar  6 09: 27: 59 2020 | houser | 6IKa4DlcrnouDGjDZpeP | s20 | 1: defused: 2: 0 1 1 2 3 5 8
-    foxcroft | Fri Mar  6 09: 29: 44 2020 | houser | 6IKa4DlcrnouDGjDZpeP | s20 | 1: defused: 3: 0 817
-    */
-
     var fields = line.split('|')
-    if (fields != 6) {
+    if (fields.length != 6) {
         return {};
     }
 
-    var [hostname, date, userid, password, version] = fields.slice(0, 4)
+    var [hostname, date, userid, password, version] = fields.slice(0, 5)
     if (hostname === undefined | date === undefined | userid === undefined | password === undefined) {
         return {};
     }
@@ -74,65 +46,106 @@ function parseScoreLine(line) {
     };
 }
 
-function parseScoreFile(scoreFile) {
-/*
-    //<th>Rank</th>
-    <th>Bomb #</th>
-        <th>Date</th>
-        <th>Phases Defused</th>
-        <th>Explosions</th>
-        <th>Score</th>
-        <th>Status</th>
-*/
-    // read all scores, replace existing ones as we go
-    // only the last score counts!
-    bombs = {};
-    scoreFile.split('\n').forEach(scoreLine => {
-        bombScore = parseScoreLine(scoreLine);
-        if (bombScore.bomb_id != undefined) {
-            updateBomb(bombScore, bombs)
-        }
-    });
+function updateBomb(bombScore, bombs) {
+    var bomb_id = bombScore['bomb_id'];
 
-    for (bomb in bombs) {
+    if (!(bomb_id in bombs)) {
+        bombs[bomb_id] = {
+            'bomb_id': bomb_id,
+            'date': bombScore['date'],
+            'userid': bombScore['userid'],
+            'password': bombScore['password'],
+            'version': bombScore['version'],
+            'phase_status': [null, null, null, null, null, null],
+            'phase_explosions': [0, 0, 0, 0, 0, 0],
+            'explosions': 0,
+            'score': 0,
+            'status': 'invalid'
+        };
     }
 
-    return scoresByBomb;
-};
+    var bomb = bombs[bomb_id];
+    bomb['date'] = bombScore['date'];
 
-function reload_table(table) {
-    $(table).DataTable().ajax.reload();
+    var phase = bombScore['phase'];
+    bomb['phase_status'][phase - 1] = bombScore['status'];
+
+    // count explosions
+    if (bombScore['status'] == 'exploded') {
+        bomb['phase_explosions'][phase - 1] += 1;
+    }
 }
 
-function make_datatable(table) {
-    $(table).DataTable({
-        "ajax": {
-            "url": SCORE_URL,
-            "dataType": "text",
-            "dataSrc": function(psv) {
-                var scores = parseScoreFile(psv);
-                return scores;
+// === Score Bombs ===
+function scoreBombs(bombs) {
+   /* Rank, bomb#, Date, phases defused, explosions, score, status */
+    let scores = Array.from(Object.values(bombs)).map(scoreBomb);
+    let sorted = scores.sort(function (a, b) { return b.score - a.score })
+    return sorted;
+}
+
+function scoreBomb(bomb) {
+    var score = scoreDefusals(bomb) - scoreExplosions(bomb);
+    bomb['score'] = Math.max(score, 0);
+    bomb['explosions'] = countExplosions(bomb);
+    bomb['defused'] = countDefusals(bomb);
+    bomb['status'] = 'valid';
+    return bomb;
+}
+
+function scoreDefusals(bomb) {
+    let total_score = bomb['phase_status'].reduce(function (score, status, phase) {
+        if (status == 'defused') {
+            switch (phase + 1) {
+                case 1: return score + 10;
+                case 2: return score + 20;
+                case 3: return score + 20;
+                case 4: return score + 20;
+                case 5: return score + 10;
             }
-        },
-        "paging": false,
-        "searching": false,
-        "info": false,
-        "order": [
-            [0, "desc"]
-        ],
-    });
+        }
+
+        return score;
+    }, 0);
+
+    return total_score;
 }
 
-// fire emoji &#128293;
-// mortar &#127891;
+function countDefusals(bomb) {
+    let defused = bomb['phase_status'].reduce(function (phases_defused, status) {
+        if (status == 'defused') {
+            phases_defused++;
+        }
+        return phases_defused;
+    }, 0);
 
-/*
-document.addEventListener('DOMContentLoaded',function(){
-  var trigger = document.getElementsByClassName("is-success")[0];
-  var instance = new Tooltip(trigger,{
-    title: trigger.getAttribute('data-tooltip'),
-    trigger: "hover",
-  });
-});
-<button class="button is-success" data-tooltip="Only $5 one-time payment!">Add to basket</button>
-*/
+    return defused;
+}
+
+function scoreExplosions(bomb) {
+    let total_score = bomb['phase_explosions'].reduce(function (score, explosions, phase) {
+        switch (phase + 1) {
+            case 1: return score + Math.min(explosions * 0.5, 5.0);
+            case 2: return score + Math.min(explosions * 0.5, 10);
+            case 3: return score + Math.min(explosions * 0.5, 12.5);
+            case 4: return score + Math.min(explosions * 0.5, 15);
+            case 5: return score + Math.min(explosions * 0.5, 9.0);
+        }
+
+        return score;
+    }, 0);
+
+    return total_score;
+}
+
+function countExplosions(bomb) {
+    let explosions = bomb['phase_explosions'].reduce(function (sum, current) {
+        return sum + current;
+    });
+
+    return explosions;
+}
+
+function summarizeBombs(bombScores) {
+    //Summary[phase: cnt][1: 0][2: 0][3: 2][4: 0][5: 0][6: 0]total defused = 0 / 3
+}

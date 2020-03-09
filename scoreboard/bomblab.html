@@ -66,8 +66,47 @@ layout: default
     </div>
 </footer>
 
+<script type="text/javascript" src="bomblab.js"></script>
 <script type="text/javascript">
-$(document).ready(function () {
-make_datatable('#scores');
-});
+
+    const INSTRUCTOR_USERID = 'houser';         // userid of The Prof
+    const SCORE_URL = 'bomblab-s20.scores.txt' // URL of score log.txt to display
+
+    function reload_table(table) {
+        $(table).DataTable().ajax.reload();
+    }
+
+    function make_datatable(table) {
+        $(table).DataTable({
+            "ajax": {
+                "url": SCORE_URL,
+                "dataType": "text",
+                "dataSrc": function (psv) {
+                    let bombs = parseScoreFile(psv);
+                    let bombScores = scoreBombs(bombs);
+                    let bombSummary = summarizeBombs(bombScores);
+                    return bombScores;
+                }
+            },
+            "paging": false,
+            "searching": false,
+            "info": false,
+            "order": [
+                [0, "asc"]
+            ],
+            "columns": [
+                { "data": function(r,t,s,m) { return m.row + 1; } },
+                { "data": "bomb_id" },
+                { "data": "date" },
+                { "data": "defused" },
+                { "data": "explosions" },
+                { "data": "score" },
+                { "data": "status" }
+            ]
+        });
+    }
+
+    $(document).ready(function () {
+        make_datatable('#scores');
+    });
 </script>
