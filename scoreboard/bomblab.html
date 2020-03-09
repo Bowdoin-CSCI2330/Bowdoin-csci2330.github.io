@@ -41,28 +41,21 @@ layout: default
                         onclick="reload_table('#scores');">Reload</button></th>
             </tr>
             <tr>
-                <th>Rank</th>
+                <th>Order</th>
                 <th>Bomb #</th>
                 <th>Date</th>
                 <th>Phases Defused</th>
                 <th>Explosions</th>
                 <th>Score</th>
-                <th>Status</th>
             </tr>
         </thead>
     </table>
-    <!-- ul class="legend">
-        <li class="score_beat">RED: Score beats the Prof</li>
-        <li class="score_match">BLUE: Score ties the Prof</li>
-        <li class="score_invalid">---/NaN: Incorrect entry</li>
-    </ul -->
-
 </div>
 
 <footer class='footer'>
     <div class='container-fluid'>
         <hr />
-        <p>This page contains the latest information that we have received from your bomb. If your solution is marked <font color=ff0000><b>invalid</b></font>, this means your bomb reported a solution that didn't actually defuse your bomb.</p>
+        <p>This page contains the latest information that we have received about the deployed bombs. These numbers and scores may vary from the final grading of your individual Bit Bomb Lab, as this scoreboard uses a faster and less comprehensive scoring and validation routine to show near real-time statistics.</p>
     </div>
 </footer>
 
@@ -100,8 +93,7 @@ layout: default
                 { "data": "date" },
                 { "data": "defused" },
                 { "data": "explosions" },
-                { "data": "score" },
-                { "data": "status" }
+                { "data": "score" }
             ]
         });
     }
