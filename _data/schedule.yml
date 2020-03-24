@@ -121,7 +121,8 @@
   day: 27
   date: "2020-02-27 08:30"
   meeting: 12
-  reading: "[Lab 2 Due](labs/lab-2-pointers), Ch. 3.6, Control Flow: Conditionals: [x86 Assembly, Video 4: Contitionals and Control Flow](https://www.youtube.com/watch?v=pG9TpOeh9RE), [x86 Assembly, Video 5: Conditional branches](https://www.youtube.com/watch?v=YSLdsDHjhRs) "
+  topic: "Control Flow: Conditionals"
+  reading: "[Lab 2 Due](labs/lab-2-pointers), Ch. 3.6, [x86 Assembly, Video 4: Contitionals and Control Flow](https://www.youtube.com/watch?v=pG9TpOeh9RE), [x86 Assembly, Video 5: Conditional branches](https://www.youtube.com/watch?v=YSLdsDHjhRs) "
   notes: ""
 
 - month: 2
