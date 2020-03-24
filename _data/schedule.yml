@@ -106,7 +106,7 @@
   meeting: 10
   date: "2020-02-21 08:30"
   topic: "[x86-64 ISA, Data Movement](notes/x86-basics)"
-  reading: "Ch. 3.1-3.4, [x86 Assembly, Video 1: Move Operations](https://www.youtube.com/watch?v=hGUnERVBSsc), [x86 Assembly, Video 2: x86-64](https://www.youtube.com/watch?v=VsDhcfrQf6I)"
+  reading: "Ch. 3.1-3.4, [x86 Video 1: Move Operations](https://www.youtube.com/watch?v=hGUnERVBSsc), [x86 Video 2: x86-64](https://www.youtube.com/watch?v=VsDhcfrQf6I)"
   notes: "[mov-exercises](exercises/mov-exercises)"
 
 # Week 6
@@ -115,14 +115,14 @@
   date: "2020-02-25 08:30"
   meeting: 11
   topic: "[Arithmetic, Condition Codes](notes/x86-basics)"
-  reading: "Ch. 3.5, [Mini Lab Suggested](labs/lab-1.5-debugging), [x86 Assembly, Video 3: Addressing](https://www.youtube.com/watch?v=n2zSeZZjQqs), [x86 Assembly, Video 4: Contitionals and Control Flow](https://www.youtube.com/watch?v=pG9TpOeh9RE)"
+  reading: "Ch. 3.5, [Mini Lab Suggested](labs/lab-1.5-debugging), [x86 Video 3: Addressing](https://www.youtube.com/watch?v=n2zSeZZjQqs), [x86 Video 4: Contitionals and Control Flow](https://www.youtube.com/watch?v=pG9TpOeh9RE)"
 
 - month: 2
   day: 27
   date: "2020-02-27 08:30"
   meeting: 12
   topic: "Control Flow: Conditionals"
-  reading: "[Lab 2 Due](labs/lab-2-pointers), Ch. 3.6, [x86 Assembly, Video 4: Contitionals and Control Flow](https://www.youtube.com/watch?v=pG9TpOeh9RE), [x86 Assembly, Video 5: Conditional branches](https://www.youtube.com/watch?v=YSLdsDHjhRs) "
+  reading: "[Lab 2 Due](labs/lab-2-pointers), Ch. 3.6, [x86 Video 4: Contitionals and Control Flow](https://www.youtube.com/watch?v=pG9TpOeh9RE), [x86 Video 5: Conditional branches](https://www.youtube.com/watch?v=YSLdsDHjhRs) "
   notes: ""
 
 - month: 2
@@ -130,7 +130,7 @@
   date: "2020-02-28 08:30"
   meeting: 13
   topic: "Control Flow: Loops & Switches"
-  reading: "[x86 Assembly, Video 6: Loops](https://www.youtube.com/watch?v=DpIJ3M0Gr3Y), [x86 Assembly, Video 7: Switch statement](https://www.youtube.com/watch?v=1r6oflIjC6Q)"
+  reading: "[x86  Video 6: Loops](https://www.youtube.com/watch?v=DpIJ3M0Gr3Y), [x86 Video 7: Switch statement](https://www.youtube.com/watch?v=1r6oflIjC6Q)"
 
 # Week 7
 - month: 3
@@ -138,7 +138,7 @@
   date: "2020-03-03 08:30"
   meeting: 14
   topic: "Control Flow: Procedures"
-  reading: "Ch. 3.7, [Procedures, Video 1: Stacks](https://www.youtube.com/watch?v=7dLZRMDcY6c)"
+  reading: "Ch. 3.7, [Procedures Video 1: Stacks](https://www.youtube.com/watch?v=7dLZRMDcY6c)"
 
 - month: 3
   day: 5
@@ -193,14 +193,14 @@
   day: 26
   date: "2020-03-26 08:30"
   meeting: 16
-  reading: "Ch 3.7, [Procedures, Video 1: Stacks](https://www.youtube.com/watch?v=7dLZRMDcY6c), [Procedures, Video 2: Call stack](https://www.youtube.com/watch), [Procedures, Video 3: Stack-based languages](https://www.youtube.com/watch?v=4zBG7ZAvURE)"
+  reading: "Ch 3.7, [Procedures Video 1: Stacks](https://www.youtube.com/watch?v=7dLZRMDcY6c), [Procedures Video 2: Call stack](https://www.youtube.com/watch), [Procedures Video 3: Stack-based languages](https://www.youtube.com/watch?v=4zBG7ZAvURE)"
   topic: "x86 Procedures"
 
 - month: 3
   day: 27
   date: "2020-03-27 08:30"
   meeting: L3
-  reading: "Ch 3.7, [Procedures, Video 4: Linux stack frame](https://www.youtube.com/watch?v=PrDsGldP1Q0), [Procedures, Video 5: Registers and variables](https://www.youtube.com/watch?v=FdHj4NeOkF0), [Procedures, Video 6: x86-64 Procedures and stacks](https://www.youtube.com/watch?v=uS4KO-rpvsU)"
+  reading: "Ch 3.7, [Procedures Video 4: Linux stack frame](https://www.youtube.com/watch?v=PrDsGldP1Q0), [Procedures Video 5: Registers and variables](https://www.youtube.com/watch?v=FdHj4NeOkF0), [Procedures Video 6: x86-64 Procedures and stacks](https://www.youtube.com/watch?v=uS4KO-rpvsU)"
   topic: "x86 Procedures, BitBomb (video soon)"
   notes: ""
 
@@ -209,7 +209,7 @@
   day: 31
   date: "2020-03-31 08:30"
   meeting: 17
-  reading: "Ch. 3.8, 3.9, [Arrays & Structs, Video 1: Arrays in C](https://www.youtube.com/watch?v=y2BAaD3fW8A), [Arrays & Structs, Video 2: Multi-dimensional arrays in C](https://www.youtube.com/watch?v=3Rm3wCfBurc), [Arrays & Structs, Video 3: Multi-level arrays in C](https://www.youtube.com/watch?v=0cB-UdTn8dI)"
+  reading: "Ch. 3.8, 3.9, [Arrays & Structs Video 1: Arrays in C](https://www.youtube.com/watch?v=y2BAaD3fW8A), [Arrays & Structs Video 2: Multi-dimensional arrays in C](https://www.youtube.com/watch?v=3Rm3wCfBurc), [Arrays & Structs Video 3: Multi-level arrays in C](https://www.youtube.com/watch?v=0cB-UdTn8dI)"
   topic: "Arrays & Structs"
 
 - month: 4
@@ -223,7 +223,7 @@
   date: "2020-04-03 08:30"
   meeting: L4
   topic: "Arrays & Structs"
-  reading: "Ch. 3.9, 3.10, [Arrays & Structs, Video 4: Structs](https://www.youtube.com/watch?v=MIs1qHjI_i4), [Arrays & Structs, Video 5: Structs and alignment](https://www.youtube.com/watch?v=TtAsN0ptKcw)"
+  reading: "Ch. 3.9, 3.10, [Arrays & Structs Video 4: Structs](https://www.youtube.com/watch?v=MIs1qHjI_i4), [Arrays & Structs Video 5: Structs and alignment](https://www.youtube.com/watch?v=TtAsN0ptKcw)"
   notes: "[buftest.c](samples/buftest.c), [exploit.c](samples/exploit.c)"
 
 ## Memory
