@@ -121,8 +121,8 @@
   day: 27
   date: "2020-02-27 08:30"
   meeting: 12
-  reading: "Ch. 3.6, Control Flow: Conditionals: [x86 Assembly, Video 4: Contitionals and Control Flow](https://www.youtube.com/watch?v=pG9TpOeh9RE), [x86 Assembly, Video 5: Conditional branches](https://www.youtube.com/watch?v=YSLdsDHjhRs) "
-  notes: "[Lab 2 Due](labs/lab-2-pointers)"
+  reading: "[Lab 2 Due](labs/lab-2-pointers), Ch. 3.6, Control Flow: Conditionals: [x86 Assembly, Video 4: Contitionals and Control Flow](https://www.youtube.com/watch?v=pG9TpOeh9RE), [x86 Assembly, Video 5: Conditional branches](https://www.youtube.com/watch?v=YSLdsDHjhRs) "
+  notes: ""
 
 - month: 2
   day: 28
@@ -237,7 +237,8 @@
   day: 9
   date: "2020-04-09 08:30"
   meeting: 20
-  topic: "Live Class Chat!, [Lab 3 Due](labs/lab-3-bitbomb)"
+  topic: "Live Class Chat!"
+  reading: "[Lab 3 Due](labs/lab-3-bitbomb)"
   notes: "[caching-exercises](exercises/caching-exercises)"
 
 - month: 4
@@ -280,8 +281,8 @@
   day: 23
   date: "2020-04-23 08:30"
   meeting: 23
-  topic: "Live Class Chat!, [Lab 4 Due](labs/lab-4-byte-stacker)"
-  reading: "Ch. 8.5"
+  topic: "Live Class Chat!"
+  reading: "Ch. 8.5, [Lab 4 Due](labs/lab-4-byte-stacker)"
   notes: ""
 
 - month: 4
@@ -315,5 +316,6 @@
   day: 5
   date: "2020-05-05 08:30"
   meeting: 26
-  topic: "Virtual Memory, [Lab 5 Due](labs/lab-5-cache)"
+  topic: "Virtual Memory"
+  reading: "[Lab 5 Due](labs/lab-5-cache)"
 
