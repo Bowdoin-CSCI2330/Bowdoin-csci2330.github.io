@@ -82,8 +82,8 @@
   day: 14
   date: "2020-02-14 08:30"
   meeting: L2
-  topic: "[Programming with Memory](notes/memory)"
-  reading: "[Lab 2](labs/lab-2-pointers)"
+  topic: "[Programming with Memory](notes/memory), [Lab 2](labs/lab-2-pointers)"
+  reading: ""
   notes: "[stringtest.c](samples/stringtest.c), [pointertest.c](samples/pointertest.c)"
 
 # Week 5
@@ -106,7 +106,7 @@
   meeting: 10
   date: "2020-02-21 08:30"
   topic: "[x86-64 ISA, Data Movement](notes/x86-basics)"
-  reading: "Ch. 3.1-3.4"
+  reading: "Ch. 3.1-3.4, [x86 Assembly, Video 1: Move Operations](https://www.youtube.com/watch?v=hGUnERVBSsc), [x86 Assembly, Video 2: x86-64](https://www.youtube.com/watch?v=VsDhcfrQf6I)"
   notes: "[mov-exercises](exercises/mov-exercises)"
 
 # Week 6
@@ -115,20 +115,21 @@
   date: "2020-02-25 08:30"
   meeting: 11
   topic: "[Arithmetic, Condition Codes](notes/x86-basics)"
-  reading: "Ch. 3.5, [Mini Lab Suggested](labs/lab-1.5-debugging)"
+  reading: "Ch. 3.5, [Mini Lab Suggested](labs/lab-1.5-debugging), [x86 Assembly, Video 3: Addressing](https://www.youtube.com/watch?v=n2zSeZZjQqs), [x86 Assembly, Video 4: Contitionals and Control Flow](https://www.youtube.com/watch?v=pG9TpOeh9RE)"
 
 - month: 2
   day: 27
   date: "2020-02-27 08:30"
   meeting: 12
-  topic: "Control Flow: Conditionals"
-  reading: "Ch. 3.6, [Lab 2 Due](labs/lab-2-pointers)"
+  reading: "Ch. 3.6, Control Flow: Conditionals: [x86 Assembly, Video 4: Contitionals and Control Flow](https://www.youtube.com/watch?v=pG9TpOeh9RE), [x86 Assembly, Video 5: Conditional branches](https://www.youtube.com/watch?v=YSLdsDHjhRs) "
+  notes: "[Lab 2 Due](labs/lab-2-pointers)"
 
 - month: 2
   day: 28
   date: "2020-02-28 08:30"
   meeting: 13
   topic: "Control Flow: Loops & Switches"
+  reading: "[x86 Assembly, Video 6: Loops](https://www.youtube.com/watch?v=DpIJ3M0Gr3Y), [x86 Assembly, Video 7: Switch statement](https://www.youtube.com/watch?v=1r6oflIjC6Q)"
 
 # Week 7
 - month: 3
@@ -136,7 +137,7 @@
   date: "2020-03-03 08:30"
   meeting: 14
   topic: "Control Flow: Procedures"
-  reading: "Ch. 3.7"
+  reading: "Ch. 3.7, [Procedures, Video 1: Stacks](https://www.youtube.com/watch?v=7dLZRMDcY6c)"
 
 - month: 3
   day: 5
@@ -184,43 +185,47 @@
   day: 24
   date: "2020-03-24 08:30"
   meeting: 15
-  topic: "Saved Registers & Arrays"
-  reading: "Ch. 3.8"
+  tpoic: "No meeting, classes cancelled"
 
+## x86
 - month: 3
   day: 26
   date: "2020-03-26 08:30"
   meeting: 16
-  topic: "Structs & Floating Point"
-  reading: "Ch. 3.9"
+  reading: "Ch 3.7, [Procedures, Video 1: Stacks](https://www.youtube.com/watch?v=7dLZRMDcY6c), [Procedures, Video 2: Call stack](https://www.youtube.com/watch), [Procedures, Video 3: Stack-based languages](https://www.youtube.com/watch?v=4zBG7ZAvURE)"
+  topic: "x86 Procedures"
 
 - month: 3
   day: 27
   date: "2020-03-27 08:30"
   meeting: L3
-  topic: "BitBombs (cont)"
+  reading: "Ch 3.7, [Procedures, Video 4: Linux stack frame](https://www.youtube.com/watch?v=PrDsGldP1Q0), [Procedures, Video 5: Registers and variables](https://www.youtube.com/watch?v=FdHj4NeOkF0), [Procedures, Video 6: x86-64 Procedures and stacks](https://www.youtube.com/watch?v=uS4KO-rpvsU)"
+  topic: "x86 Procedures, BitBomb (video soon)"
+  notes: ""
 
+## Week
 - month: 3
   day: 31
   date: "2020-03-31 08:30"
   meeting: 17
-  topic: "Buffer Overflow & Code Injection"
-  reading: "Ch. 3.10"
-  notes: "[buftest.c](samples/buftest.c), [exploit.c](samples/exploit.c)"
+  reading: "Ch. 3.8, 3.9, [Arrays & Structs, Video 1: Arrays in C](https://www.youtube.com/watch?v=y2BAaD3fW8A), [Arrays & Structs, Video 2: Multi-dimensional arrays in C](https://www.youtube.com/watch?v=3Rm3wCfBurc), [Arrays & Structs, Video 3: Multi-level arrays in C](https://www.youtube.com/watch?v=0cB-UdTn8dI)"
+  topic: "Arrays & Structs"
 
 - month: 4
   day: 2
   date: "2020-04-02 08:30"
   meeting: 18
-  reading: "[Lab 3 Due](labs/lab-3-bitbomb)"
-  topic: "Return-Oriented Programming"
+  topic: "Live Class Chat!"
 
 - month: 4
   day: 3
   date: "2020-04-03 08:30"
   meeting: L4
-  topic: "Byte Stacker"
+  topic: "Arrays & Structs"
+  reading: "Ch. 3.9, 3.10, [Arrays & Structs, Video 4: Structs](https://www.youtube.com/watch?v=MIs1qHjI_i4), [Arrays & Structs, Video 5: Structs and alignment](https://www.youtube.com/watch?v=TtAsN0ptKcw)"
+  notes: "[buftest.c](samples/buftest.c), [exploit.c](samples/exploit.c)"
 
+## Memory
 - month: 4
   day: 7
   date: "2020-04-07 08:30"
@@ -232,36 +237,37 @@
   day: 9
   date: "2020-04-09 08:30"
   meeting: 20
-  topic: "Direct-Mapped Caches"
-  reading: "Ch. 6.4-6.5"
+  topic: "Live Class Chat!, [Lab 3 Due](labs/lab-3-bitbomb)"
   notes: "[caching-exercises](exercises/caching-exercises)"
 
 - month: 4
   day: 10
   date: "2020-04-10 08:30"
   meeting: L4
-  topic: "Byte Stacker (cont)"
+  topic: "Caching & The Memory Hierarchy"
 
+## Week
 - month: 4
   day: 14
   date: "2020-04-14 08:30"
   meeting: 21
-  topic: "Associative Caches"
+  topic: "Caching & The Memory Hierarchy"
+  reading: "Ch. 8.1-8.3"
   notes: "[associative-exercises](exercises/associative-exercises)"
 
 - month: 4
   day: 16
   date: "2020-04-16 08:30"
   meeting: 21
-  topic: "Exceptional Control Flow"
-  reading: "[Lab 4 Due](labs/lab-4-byte-stacker), Ch. 8.1-8.3"
+  topic: "Live Class Chat!"
 
 - month: 4
   day: 17
   date: "2020-04-17 08:30"
   meeting: L5
-  topic: "Make Some Cache"
+  topic: "Caching & The Memory Hierarchy"
 
+## Processes
 - month: 4
   day: 21
   date: "2020-04-21 08:30"
@@ -274,37 +280,40 @@
   day: 23
   date: "2020-04-23 08:30"
   meeting: 23
-  topic: "Shells & Signals"
+  topic: "Live Class Chat!, [Lab 4 Due](labs/lab-4-byte-stacker)"
   reading: "Ch. 8.5"
+  notes: ""
 
 - month: 4
   day: 24
   date: "2020-04-24 08:30"
+  topic: "Process Management"
 
+## Week
 - month: 4
   day: 28
   date: "2020-04-28 08:30"
   meeting: 24
-  topic: "Concurrency and Threads"
+  topic: "Process Management"
   notes: "[thread.c](samples/thread.c)"
 
 - month: 4
   day: 30
   date: "2020-04-30 08:30"
   meeting: L6
-  reading: "[Lab 5 Due](labs/lab-5-cache)"
-  topic: "The Bowdoin Shell"
+  topic: "Live Class Chat!"
+  reading: ""
 
 - month: 5
   day: 1
   date: "2020-05-01 08:30"
   meeting: 25
-  topic: "Virtual Memory"
+  topic: "Process Management"
 
+## Week
 - month: 5
   day: 5
   date: "2020-05-05 08:30"
   meeting: 26
-  topic: "Linking, Digital Logic, and Wrap-up"
-  notes: "[Lab 6 Due](labs/lab-6-shell)"
+  topic: "Virtual Memory, [Lab 5 Due](labs/lab-5-cache)"
 
