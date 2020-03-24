@@ -140,15 +140,15 @@ h2 {
 }
 
 .schedule tr td:nth-child(3) {
-	width: 30%;
-}
-
-.schedule tr td:nth-child(4) {
 	width: 20%;
 }
 
+.schedule tr td:nth-child(4) {
+	width: 35%;
+}
+
 .schedule tr td:nth-child(5) {
-	width: 40%;
+	width: 35%;
 }
 
 
