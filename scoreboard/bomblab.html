@@ -110,7 +110,15 @@ layout: default
                 { "data": function (row) { return phaseString(row, 3); } },
                 { "data": function (row) { return phaseString(row, 4); } },
                 { "data": function (row) { return phaseString(row, 5); } },
-                { "data": "defused" },
+                { 
+                    "data": function (row) {
+                        if (row.defused >= 7) {
+                            return '✨'+ row.defused + '✨';
+                        }
+
+                        return row.defused;
+                    }
+                },
                 {
                     "data": function (row, type, set, meta) {
                         return "💣".repeat((row.explosions / 5) + 1) + "(" + row.explosions + ")";
@@ -121,6 +129,7 @@ layout: default
                         if (row.defused >= 6) {
                             return "Defused";
                         }
+
                         return "Armed";
                     }
                 },
@@ -138,8 +147,19 @@ layout: default
                     }
                 },
                 {
+                    'targets': 8,
+                    'createdCell': function (td, cellData, rowData, rowIndex, col) {
+                        if (rowData.defused >= 7) {
+                            $(td).addClass('sparkle');
+                        }
+                    }
+                },
+                {
                     'targets': 10,
                     "createdCell": function (td, cellData, rowData, row, col) {
+                        // if (rowData.defused >= 7) {
+                        //     $(td).addClass('sparkle');
+                        // }
                         if (rowData.defused >= 6) {
                             $(td).addClass('defused');
                         } else {
