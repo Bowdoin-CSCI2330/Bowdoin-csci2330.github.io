@@ -101,7 +101,8 @@ function scoreDefusals(bomb) {
                 case 2: return score + 20;
                 case 3: return score + 20;
                 case 4: return score + 20;
-                case 5: return score + 10;
+                case 5: return score + 20;
+                case 6: return score + 10;
             }
         }
 
@@ -126,10 +127,11 @@ function scoreExplosions(bomb) {
     let total_score = bomb['phase_explosions'].reduce(function (score, explosions, phase) {
         switch (phase + 1) {
             case 1: return score + Math.min(explosions * 0.5, 5.0);
-            case 2: return score + Math.min(explosions * 0.5, 10);
-            case 3: return score + Math.min(explosions * 0.5, 12.5);
-            case 4: return score + Math.min(explosions * 0.5, 15);
-            case 5: return score + Math.min(explosions * 0.5, 9.0);
+            case 2: return score + Math.min(explosions * 0.5, 15.0);
+            case 3: return score + Math.min(explosions * 0.5, 15.0);
+            case 4: return score + Math.min(explosions * 0.5, 12.5);
+            case 5: return score + Math.min(explosions * 0.5, 10.0);
+            case 6: return score + Math.min(explosions * 0.5, 7.5);
         }
 
         return score;

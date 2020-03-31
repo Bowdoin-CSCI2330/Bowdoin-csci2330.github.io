@@ -1,7 +1,7 @@
 ---
 title: Lab 3 - Bit Bombs
 assigned: 2020-02-28 00:00
-due: 2020-04-02 23:59
+due: 2020-04-09 23:59
 collaboration_policy: Level 1
 group_policy: Individual
 ---
@@ -9,10 +9,6 @@ group_policy: Individual
 This lab will give you experience with x86-64 machine code and reverse-engineering, in addition to extensive practice with the debugger. Your task is to defuse a BitBomb planted on the class server by reverse-engineering it to discover its defusal codes!
 
 <!--more-->
-
-**Checkpoint 1**: Sunday, October 20. Phase 1 should be defused by this checkpoint.
-**Checkpoint 2**: Sunday, October 27. Phases 2 and 3 should be defused by this checkpoint.
-**Due Date**: Friday, November 1. All phases should be defused.
 
 **Note**: Read through the full writeup before tackling your bitbomb - do not immediately (and blindly) execute it!
 
