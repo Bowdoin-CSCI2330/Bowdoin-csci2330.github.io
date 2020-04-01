@@ -32,7 +32,8 @@ layout: default
 </header>
 
 <div class="container-fluid">
-    <p>[phase:cnt] [1:0] [2:0] [3:0] [4:0] [5:0] [6:0] total defused = 0/0</p>
+    <div id="phase_status">
+    </div>
 
     <table id="scores" class="display compact" cellspacing="0" width="100%">
         <thead>
@@ -166,7 +167,11 @@ layout: default
                             $(td).addClass('armed');
                         }
                     }
-                }]
+                }],
+            "initComplete": function(settings, json) {
+                updatePhaseStatus('phase_status');
+
+            }
         });
     }
 

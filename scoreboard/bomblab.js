@@ -52,7 +52,7 @@ function updateBomb(bombScore, bombs) {
     if (!(bomb_id in bombs)) {
         bombs[bomb_id] = {
             'bomb_id': bomb_id,
-            'date': bombScore['date'],
+            'date': bombScore['date'].substring(0, 16),
             'userid': bombScore['userid'],
             'password': bombScore['password'],
             'version': bombScore['version'],
@@ -65,7 +65,7 @@ function updateBomb(bombScore, bombs) {
     }
 
     var bomb = bombs[bomb_id];
-    bomb['date'] = bombScore['date'];
+    bomb['date'] = bombScore['date'].substring(0, 16);
 
     var phase = bombScore['phase'];
     bomb['phase_status'][phase - 1] = bombScore['status'];
@@ -148,6 +148,51 @@ function countExplosions(bomb) {
     return explosions;
 }
 
+var bombSummary = [];
+var bombCount = 0;
+
 function summarizeBombs(bombScores) {
-    //Summary[phase: cnt][1: 0][2: 0][3: 2][4: 0][5: 0][6: 0]total defused = 0 / 3
+    bombCount = bombScores.length;
+    bombSummary = bombScores.reduce(function (scores, bombScore) {
+        return scores.map(function (c, i, a) {            
+            if (bombScore.defused >= i + 1) {
+                return c + 1;
+            }
+
+            return c;
+        });
+    }, [0, 0, 0, 0, 0, 0]);
+
+    return bombSummary;
+}
+
+function updatePhaseStatus(statusListID) {
+    let phaseStatusDiv = document.getElementById(statusListID);
+    if (phaseStatusDiv) {
+        var ul = document.createElement('ul');
+
+        bombSummary.forEach(function(defused, index) {
+            var li = document.createElement('li');
+
+            var p = document.createElement('p');
+            p.innerHTML += defused;
+            if (defused >= bombCount) {
+                p.setAttribute('class', 'defused');
+            } else if (defused >= (bombCount * 0.75)) {
+                p.setAttribute('class', 'armed-yellow');
+            } else {
+                p.setAttribute('class', 'armed');
+            }
+
+            var span = document.createElement('span');
+            span.innerHTML = 'Phase ' + (index + 1);
+
+            li.appendChild(span);
+            li.appendChild(p);
+
+            ul.appendChild(li);
+        });
+    
+        phaseStatusDiv.appendChild(ul);
+    }
 }
