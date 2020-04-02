@@ -119,7 +119,7 @@
   day: 27
   date: "2020-02-27 08:30"
   meeting: 12
-  topic: "Control Flow: Conditionals"
+  topic: "[Control Flow: Conditionals](notes/x86-control)"
   reading: "[Lab 2 Due](labs/lab-2-pointers), Ch. 3.6, [x86 Video 4: Contitionals and Control Flow](https://www.youtube.com/watch?v=pG9TpOeh9RE), [x86 Video 5: Conditional branches](https://www.youtube.com/watch?v=YSLdsDHjhRs) "
   notes: ""
 
@@ -127,7 +127,7 @@
   day: 28
   date: "2020-02-28 08:30"
   meeting: 13
-  topic: "Control Flow: Loops & Switches"
+  topic: "[Control Flow: Loops & Switches](notes/x86-control)"
   reading: "[x86  Video 6: Loops](https://www.youtube.com/watch?v=DpIJ3M0Gr3Y), [x86 Video 7: Switch statement](https://www.youtube.com/watch?v=1r6oflIjC6Q)"
 
 # Week 7
@@ -135,7 +135,7 @@
   day: 3
   date: "2020-03-03 08:30"
   meeting: 14
-  topic: "Control Flow: Procedures"
+  topic: "[Control Flow: Procedures](notes/x86-control)"
   reading: "Ch. 3.7, [Procedures Video 1: Stacks](https://www.youtube.com/watch?v=7dLZRMDcY6c)"
 
 - month: 3
