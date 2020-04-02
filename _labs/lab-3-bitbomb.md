@@ -150,4 +150,4 @@ To assist us in tracking the server-wide defusal effort, we have created an onli
 
 The status report page is automatically updated as you work with your bitbomb and requires no action on your part.
 
-[BitBomb Disarmament Status Report](https://web.bowdoin.edu/~houser/csci2330/scoreboard/bomb.html)
+[BitBomb Disarmament Status Report]({{ "/scoreboard/bomblab.html" | relative_url }})
