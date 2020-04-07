@@ -1,3 +1,4 @@
+# asm version of looper.c
 	.file	"looper.c"
 	.text
 .Ltext0:
