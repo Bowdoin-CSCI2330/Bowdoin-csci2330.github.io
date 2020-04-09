@@ -86,6 +86,7 @@ ul.legend > li,
     background-color: #f0f0f0;
 }
 
+.exploited,
 .defused {
     font-family: sans-serif;
     font-size: small;
@@ -96,6 +97,7 @@ ul.legend > li,
     vertical-align: middle;
 }
 
+.secure,
 .armed {
     font-family: sans-serif;
     font-size: small;
@@ -106,6 +108,7 @@ ul.legend > li,
     vertical-align: middle;
 }
 
+.secure-yellow,
 .armed-yellow {
     font-family: sans-serif;
     font-size: small;
@@ -151,10 +154,12 @@ ul.legend > li,
   visibility: visible;
 }
 
+#level_status,
 #phase_status {
     margin-top: 1em;
 }
 
+#level_status ul,
 #phase_status ul {
     width: 90%;
     margin-left: auto;
@@ -164,12 +169,14 @@ ul.legend > li,
     height: 5em;
 }
 
+#level_status li,
 #phase_status li {
     display: table-cell;
     width: auto;
     text-align: center;
 }
 
+#level_status li p,
 #phase_status li p {
     margin-left: 0.25em;
     margin-right: 0.25em;
@@ -178,6 +185,7 @@ ul.legend > li,
     font-size: xx-large;
 }
 
+#level_status li span,
 #phase_status li span {
     width: auto;
     text-align: center;

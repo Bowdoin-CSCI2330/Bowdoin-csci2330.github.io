@@ -1,1 +1,118 @@
 # Code Samples in _samples
+- file: .
+  description: ""
+
+- file: .vscode
+  description: ""
+
+- file: .vscode
+  description: "{"
+
+- file: add-args.s
+  description: "add-args.s - add two numbers on the command line"
+
+- file: any_even.c
+  description: "any_even.c - return 1 if any even-numbered bit in word set to 1"
+
+- file: exercise-1.c
+  description: "exercise-1-8.c - Exercise 1, part c from text"
+
+- file: exploit.c
+  description: "exploit.c - Creates an exploit string for buftest."
+
+- file: buftest.c
+  description: "buftest.c - sample using char buffer"
+
+- file: extract.c
+  description: "extract.c - "
+
+- file: forktest.c
+  description: "forktest.c - example using posix fork()"
+
+- file: hello-c.i
+  description: "hello-c.i - GCC preprocessor output from hello-c.c"
+
+- file: hello-printf.s
+  description: "hello-printf.s - Write hello world to terminal in asm using printf()"
+
+- file: exercise-1-8.c
+  description: "exercise-1-8.c - Exercise 1.8, part c from text"
+
+- file: hello-puts.s
+  description: "hello-puts.s - Write hello world to terminal in asm using puts()"
+
+- file: hello.md
+  description: "---"
+
+- file: hello.s
+  description: "hello.s - Write hello world to terminal in asm"
+
+- file: int-show.c
+  description: "intshow.c - show hex representation of words"
+
+- file: count-return.s
+  description: "count-return.s - simple example of asm arithmetic functions"
+
+- file: hello-c.c
+  description: "hello-c.c - hello world in C"
+
+- file: loop-compile
+  description: "loop-compile - script to compile loop.c to loop.s"
+
+- file: loop.c
+  description: "sample loops that fail"
+
+- file: op-ex.s
+  description: "op-ex.s - operation execution code exercise"
+
+- file: pointers.c
+  description: "pointers.c - various ways to access pointed to things in C"
+
+- file: pointertest.c
+  description: "pointertest.c - some experiments with pointers in C"
+
+- file: show-args
+  description: ""
+
+- file: show-args.c
+  description: "show-args.c - accessing command line arguments (char **) in C"
+
+- file: simple.c
+  description: "simple.c - simple C arithmetic to be converted to asm "
+
+- file: stringtest.c
+  description: "stringtest.c - accessing strings in various ways using C"
+
+- file: swap.s
+  description: "swap.s - swap x and y in asm"
+
+- file: thread.c
+  description: "thread.c - A demo of pthreads in C."
+
+- file: zips1.c
+  description: "zips1.c - allocating and using an array of arrays (int **) "
+
+- file: zips2.c
+  description: "zips2.c - allocating and using an array of arrays (int **)"
+
+- file: Makefile
+  description: "Makefile - to compile samples"
+
+- file: loop.s
+  description: "loop.s - sample assembly from loop.c	"
+
+- file: highbit.c
+  description: "highbit.c -- show high bits of word in C"
+
+- file: even.c
+  description: "even.c - return 1 if any even-numbered bit in word set to 1"
+
+- file: looper.c
+  description: "<stdio.h>"
+
+- file: looper.s
+  description: "asm version of looper.c"
+
+- file: op-ex-solutions.s
+  description: "op-ex.s - solutions to in-class operations exercises"
+

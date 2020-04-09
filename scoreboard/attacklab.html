@@ -22,17 +22,17 @@ layout: default
 
 <!-- Local Style and Script -->
 <link rel="stylesheet" href="scoreboard.css">
-<script type="text/javascript" src="bomblab.js"></script>
+<script type="text/javascript" src="attacklab.js"></script>
 
 <header class='header'>
     <div class='container-fluid'>
-        <h1 class="center">Bit Bomb Scoreboard</h1>
+        <h1 class="center">Stack Attack! Scoreboard</h1>
         <hr />
     </div>
 </header>
 
 <div class="container-fluid">
-    <div id="phase_status">
+    <div id="level_status">
     </div>
 
     <table id="scores" class="display compact" cellspacing="0" width="100%">
@@ -42,16 +42,14 @@ layout: default
                         onclick="reload_table('#scores');">Reload</button></th>
             </tr>
             <tr>
-                <th>Bomb #</th>
+                <th>Target #</th>
                 <th>Date</th>
-                <th>Phase 1</th>
-                <th>Phase 2</th>
-                <th>Phase 3</th>
-                <th>Phase 4</th>
-                <th>Phase 5</th>
-                <th>Phase 6</th>
-                <th>Phases Defused</th>
-                <th>Explosions</th>
+                <th>Level 1</th>
+                <th>Level 2</th>
+                <th>Level 3</th>
+                <th>Level 4</th>
+                <th>Level 5</th>
+                <th>Levels Attacked!</th>
                 <th>Status</th>
                 <th>Score</th>
             </tr>
@@ -62,25 +60,25 @@ layout: default
 <footer class='footer'>
     <div class='container-fluid'>
         <hr /> 
-        <p>This page contains the latest information that we have received about the deployed bombs. These numbers and scores may vary from the final grading of your individual Bit Bomb Lab, as this scoreboard uses a faster and less comprehensive scoring and validation routine to show near real-time statistics.</p>
+        <p>This page contains the latest information that we have received about the deployed attack targets. These numbers and scores may vary from the final grading of your individual Stack Attack Lab, as this scoreboard uses a faster and less comprehensive scoring and validation routine to show near real-time statistics.</p>
     </div>
 </footer>
 
 <script type="text/javascript">
 
     const INSTRUCTOR_USERID = 'houser';         // userid of The Prof
-    const SCORE_URL = 'bomblab-s20.scores.txt' // URL of score log.txt to display
+    const SCORE_URL = 'attacklab-s20.scores.txt' // URL of score log.txt to display
 
     function reload_table(table) {
         $(table).DataTable().ajax.reload();
     }
 
-    function phaseString(row, phase) {
-        if (row.phase_status[phase] == "defused") {
-            return "defused";
+    function levelString(row, level) {
+        if (row.level_status[level] == "exploited") {
+            return "exploited";
         }
 
-        return "armed";
+        return "secure";
     }
 
     function make_datatable(table) {
@@ -89,86 +87,68 @@ layout: default
                 "url": SCORE_URL,
                 "dataType": "text",
                 "dataSrc": function (psv) {
-                    let bombs = parseScoreFile(psv);
-                    let bombScores = scoreBombs(bombs);
-                    let bombSummary = summarizeBombs(bombScores);
-                    return bombScores;
+                    let targets = parseScoreFile(psv);
+                    let targetScores = scoreTargets(targets);
+                    let targetSummary = summarizeTargets(targetScores);
+                    return targetScores;
                 }
             },
             "paging": false,
             "searching": false,
             "info": false,
             "order": [
-                [11, "desc"]
+                [9, "desc"]
             ],
             "columns": [
-                { "data": "bomb_id" },
+                { "data": "target_id" },
                 { "data": "date" },
-                { "data": function (row) { return phaseString(row, 0); } },
-                { "data": function (row) { return phaseString(row, 1); } },
-                { "data": function (row) { return phaseString(row, 2); } },
-                { "data": function (row) { return phaseString(row, 3); } },
-                { "data": function (row) { return phaseString(row, 4); } },
-                { "data": function (row) { return phaseString(row, 5); } },
-                { 
-                    "data": function (row) {
-                        if (row.defused >= 7) {
-                            return '✨'+ row.defused + '✨';
+                { "data": function (row) { return levelString(row, 0); } },
+                { "data": function (row) { return levelString(row, 1); } },
+                { "data": function (row) { return levelString(row, 2); } },
+                { "data": function (row) { return levelString(row, 3); } },
+                { "data": function (row) { return levelString(row, 4); } },
+                { "data": function (row) { return row.exploited; } },
+                { "data": function (row, type, set, meta) {
+                        if (row.exploited >= 5) {
+                            return "Exploited";
                         }
 
-                        return row.defused;
-                    }
-                },
-                {
-                    "data": function (row, type, set, meta) {
-                        return "💣".repeat((row.explosions / 5) + 1) + "(" + row.explosions + ")";
-                    }
-                },
-                {
-                    "data": function (row, type, set, meta) {
-                        if (row.defused >= 6) {
-                            return "Defused";
-                        }
-
-                        return "Armed";
+                        return "Secure";
                     }
                 },
                 { "data": "score" }
             ],
             "columnDefs": [
                 { 
-                    'targets': [2, 3, 4, 5, 6, 7],
+                    'targets': [2, 3, 4, 5, 6],
                     'createdCell': function (td, cellData, rowData, rowIndex, col) {
                         if (cellData != "") {
                             $(td).addClass(cellData);
                         } else {
-                            $(td).addClass('armed');
+                            $(td).addClass('secure');
                         }
                     }
                 },
                 {
-                    'targets': 8,
+                    'targets': 7,
                     'createdCell': function (td, cellData, rowData, rowIndex, col) {
-                        if (rowData.defused >= 7) {
+                        if (rowData.exploited >= 5) {
                             $(td).addClass('sparkle');
                         }
                     }
                 },
                 {
-                    'targets': 10,
+                    'targets': 8,
                     "createdCell": function (td, cellData, rowData, row, col) {
-                        // if (rowData.defused >= 7) {
-                        //     $(td).addClass('sparkle');
-                        // }
-                        if (rowData.defused >= 6) {
-                            $(td).addClass('defused');
+                        if (rowData.exploited >= 5) {
+                            $(td).addClass('exploited');
                         } else {
-                            $(td).addClass('armed');
+                            $(td).addClass('secure');
                         }
                     }
                 }],
             "initComplete": function(settings, json) {
-                updatePhaseStatus('phase_status');
+                updateLevelStatus('level_status');
 
             }
         });
