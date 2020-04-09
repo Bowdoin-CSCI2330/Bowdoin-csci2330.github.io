@@ -408,3 +408,5 @@ The Disarmament Status Report page has been updated to show progress towards fig
 Stack Attack notifications are automatically logged by the server and require no action on your part.
 
 [Stack Attack Status Report]({{ "/scoreboard/attacklab.html" | relative_url }})
+
+[PDF of Slides used for Overview Video]({{ "/labs/lab4-overview.pdf" | relative_url }})
