@@ -37,8 +37,8 @@ function parseScoreLine(line) {
     return {
         'hostname': hostname,
         'date': date,
-		'userid': userid,
-		'course': course,
+        'userid': userid,
+        'course': course,
         'target_id': target_id,
         'status': status,
         'cookie': cookie,
@@ -67,15 +67,21 @@ function updateTarget(targetScore, targets) {
     var target = targets[target_id];
     target['date'] = targetScore['date'].substring(0, 16);
 
-	var level = targetScore['level'];
-	if (targetScore['status'] === 'PASS') {
-		target['level_status'][level - 1] = 'exploited';
-	}
+    var level = parseInt(targetScore['level']);
+    if (targetScore['status'] === 'PASS') {
+        if (targetScore['target'] == 'rtarget') {
+            // rtarget exploits level 2 and 3 again
+            // so level 2 == 4 and level 3 == 5
+            level += 2;
+        }
+
+        target['level_status'][level - 1] = 'exploited';
+    }
 }
 
 // === Score Targets ===
 function scoreTargets(targets) {
-   /* Rank, target#, Date, phases defused, explosions, score, status */
+    /* Rank, target#, Date, phases defused, explosions, score, status */
     let scores = Array.from(Object.values(targets)).map(scoreTarget);
     let sorted = scores.sort(function (a, b) { return b.score - a.score })
     return sorted;
@@ -97,7 +103,7 @@ function scoreExploits(target) {
                 case 2: return score + 25;
                 case 3: return score + 20;
                 case 4: return score + 30;
-                case 5: return score +  5;
+                case 5: return score + 5;
             }
         }
 
@@ -124,7 +130,7 @@ var targetCount = 17; //0;
 function summarizeTargets(targetScores) {
     //targetCount = targetScores.length;
     targetSummary = targetScores.reduce(function (scores, targetScore) {
-        return scores.map(function (c, i, a) {            
+        return scores.map(function (c, i, a) {
             if (targetScore.exploited >= i + 1) {
                 return c + 1;
             }
@@ -141,7 +147,7 @@ function updateLevelStatus(statusListID) {
     if (levelStatusDiv) {
         var ul = document.createElement('ul');
 
-        targetSummary.forEach(function(exploited, index) {
+        targetSummary.forEach(function (exploited, index) {
             var li = document.createElement('li');
 
             var p = document.createElement('p');
@@ -162,7 +168,7 @@ function updateLevelStatus(statusListID) {
 
             ul.appendChild(li);
         });
-    
+
         levelStatusDiv.appendChild(ul);
     }
 }
