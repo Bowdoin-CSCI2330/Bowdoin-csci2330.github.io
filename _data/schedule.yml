@@ -318,5 +318,10 @@
   date: "2020-05-05 08:30"
   meeting: 26
   topic: "Virtual Memory"
+  
+## Final Exam
+- month: 5
+  day: 12
+  date: "2020-05-12 08:30"
+  topic: "Final Exam - Available All Day"
   reading: "[Lab 5 Due](labs/lab-5-cache)"
-
