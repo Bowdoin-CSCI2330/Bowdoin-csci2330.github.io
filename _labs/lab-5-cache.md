@@ -57,13 +57,13 @@ The reference simulator takes the following command-line arguments:
 For example, here is an example run of the reference simulator:
 
 ```bash
-$ ./cachesim-ref -s 4 -E 1 -b 4 -t traces/t2.trace
+$ ./csim-ref -s 4 -E 1 -b 4 -t traces/yi.trace
 hits:4 misses:5 evictions:3
 ```
 Running the same with the addition of the `-v` flag will print information about each memory access in the trace:
 
 ```bash
-$ ./cachesim-ref -v -s 4 -E 1 -b 4 -t traces/t2.trace
+$ ./csim-ref -v -s 4 -E 1 -b 4 -t traces/yi.trace
 L 10,1 miss 
 M 20,1 miss hit 
 L 22,1 hit 
@@ -96,22 +96,22 @@ In addition to following the reference implementation output format, you must ad
 
 Your lab files contained in starter repository consist of the following:
 
-* `cachesim.c`: Your cache simulator program.
+* `csim.c`: Your cache simulator program.
 
-* `cachesim-ref`: The compiled reference simulator.
+* `csim-ref`: The compiled reference simulator.
 
-* `cache.c` and `cache.h`: Helper code for the printSummary function.
+* `cachelab.c` and `cachelab.h`: Helper code for the printSummary function.
 
 * `Makefile`: Included Makefile for building your program.
 
 * `traces/`: Directory of memory trace files for testing.
 
-* `test-cachesim`: Program to automatically test your simulator against the reference simulator.
+* `test-csim`: Program to automatically test your simulator against the reference simulator.
 
-To test your cache simulator against all of the included trace files and output an autograded correctness score, just execute the `test-cachesim` program:
+To test your cache simulator against all of the included trace files and output an autograded correctness score, just execute the `test-csim` program:
 
 ```bash
-$ ./test-cachesim 
+$ ./test-csim 
                         Your simulator     Reference simulator
 Points (s,E,b)    Hits  Misses  Evicts    Hits  Misses  Evicts
      3 (1,1,1)       9       8       6       9       8       6  traces/t1.trace
@@ -127,7 +127,7 @@ Points (s,E,b)    Hits  Misses  Evicts    Hits  Misses  Evicts
 Simulator summary: scored 27 of 27 points
 ```
 
-**NOTE:** Your simulator may be tested on traces not in the set of reference traces, and thus a full score on `test-cachesim` does not necessarily mean that your program will receive full correctness marks.
+**NOTE:** Your simulator may be tested on traces not in the set of reference traces, and thus a full score on `test-csim` does not necessarily mean that your program will receive full correctness marks.
 
 ## General Advice
 
