@@ -43,7 +43,7 @@ The above example will run the program `ls -l` and dump a trace of its memory ac
 
 ## Cache Simulator
 
-You have been provided with the compiled executable of a reference cache simulator called `cachesim-ref` to help you in testing your program. Just like the simulator you will write, the reference simulator outputs the total number of hits, misses, and evictions when running a given `valgrind` trace through the specified cache.
+You have been provided with the compiled executable of a reference cache simulator called `csim-ref` to help you in testing your program. Just like the simulator you will write, the reference simulator outputs the total number of hits, misses, and evictions when running a given `valgrind` trace through the specified cache.
 
 The reference simulator takes the following command-line arguments:
 
@@ -74,7 +74,7 @@ M 12,1 miss eviction hit
 hits:4 misses:5 evictions:3
 ```
 
-Your job is to complete your own cache simulator such that it takes the same command-line arguments as the reference simulator (except for `-h`, which is optional) and produces identical output. You should write your simulator in `cachesim.c`. Note that this file is almost completely empty -- you'll need to write your simulator from scratch.
+Your job is to complete your own cache simulator such that it takes the same command-line arguments as the reference simulator (except for `-h`, which is optional) and produces identical output. You should write your simulator in `csim.c`. Note that this file is almost completely empty -- you'll need to write your simulator from scratch.
 
 ## Cache Specification
 
@@ -204,9 +204,9 @@ while ((c = getopt(argc, argv, "ab:c")) != -1) { // : indicates a flag with an a
 
 ## Logistics
 
-As usual, you will get the starter files when you accept the assignment. You are responsible for completing the contents of `cachesim.c`, but should not modify any other file (e.g., `cache.c` or `cache.h`).
+As usual, you will get the starter files when you accept the assignment. You are responsible for completing the contents of `csim.c`, but should not modify any other file (e.g., `cache.c` or `cache.h`).
 
-Your final submission will consist of your committed `cachesim.c` file at the time of the due date.
+Your final submission will consist of your committed `csim.c` file at the time of the due date.
 
 ## Evaluation
 
