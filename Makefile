@@ -2,7 +2,7 @@
 all: build publish clean
 
 samples:
-	./make-samples.sh
+	./scripts/make-samples.sh
 
 build: samples
 	bundle exec jekyll build
