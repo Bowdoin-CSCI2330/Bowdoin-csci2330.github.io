@@ -8,7 +8,8 @@ build: samples
 	bundle exec jekyll build
 
 publish:
-	rsync -av --delete --exclude "scoreboard/*scores.txt" _site/* ~/public_html/csci2330
+#	rsync -av --delete --exclude "scoreboard/*scores.txt" _site/* ~/public_html/csci2330
+	rsync -av --delete _site/* ~/public_html/csci2330
 
 serve: samples
 	bundle exec jekyll serve
