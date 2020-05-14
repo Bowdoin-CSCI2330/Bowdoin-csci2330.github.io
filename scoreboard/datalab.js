@@ -2,7 +2,7 @@
  * Scoreboard for Project 1 Bit Hacker, CS 2330
  */
 
-const INSTRUCTOR_USERID = 'houser'; // userid of The Prof
+const INSTRUCTOR_USERID = '1658975631821485'; // userid of The Prof
 const SCORE_URL = 'datalab-s20.scores.txt' // URL of score log.txt to display
 
 const BIGNUM = 999999; // Arbitrary no.of ops assigned to incorrect solution
