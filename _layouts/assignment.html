@@ -5,9 +5,6 @@ layout: default
 
 	<header class="post-header">
 		<h1 class="post-title">{{ page.title | escape }}</h1>
-		{% assign date_format = site.minima.date_format | default: "%A, %B %-d, %Y at %I:%M%p" %}
-		<h3>Assigned: {{ page.assigned | date: date_format }}</h3>
-		<h3 class="due-date" >Due:{{ page.due | date: date_format }}</h3>
 		<h3>Collaboration Policy: {{ page.collaboration_policy }}</h3>
 		<h3>Group Policy: {{ page.group_policy }}</h3>
 	</header>

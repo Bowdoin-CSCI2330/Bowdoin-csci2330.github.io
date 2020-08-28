@@ -70,23 +70,33 @@ h2 {
 .samples .post-list li h2,
 .exercises .post-list li h2,
 .labs .post-list li h2,
-.projects .post-list li h2 {
+.projects .post-list li h2,
+.notes .post-list li h2 {
 	border: none;
 }
 
 .samples .post-list li, 
 .exercises .post-list li, 
 .labs .post-list li,
-.projects .post-list li {
+.projects .post-list li,
+.notes .post-list li {
 	padding: 0.5em;
-	border: 1px solid black;
 }
 
 .samples .post-meta,
 .exercises .post-meta,
-.labs .post-meta,
-.projects .post-meta {
-	/* color: red; */
+.labs .post-meta p,
+.projects .post-meta,
+.notes .post-meta {
+	margin-left: 1em;
+}
+
+.samples .post-meta,
+.exercises .post-meta,
+.labs .post-meta p,
+.projects .post-meta,
+.notes .post-meta {
+	margin-bottom: 1em;
 }
 
 .exercise ol {
@@ -99,6 +109,7 @@ h2 {
 }
 
 /* === Lecture Notes === */
+/*
 .notes .post-link {
 	display: inline;
 }
@@ -106,6 +117,7 @@ h2 {
 .notes blockquote {
 	margin-left: 1em;
 }
+*/
 
 /* == Resource List == */
 .resources .post-list a {

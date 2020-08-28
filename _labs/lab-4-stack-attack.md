@@ -1,15 +1,13 @@
 ---
 title: Lab 4 - Stack Attack
-assigned: 2020-04-10 00:01
-due: 2020-04-23 23:59
 collaboration_policy: Level 1
 group_policy: Individual
 ---
 Most of the bitbombs on our server have been safely defused, but a few unusual ones remain. We believe that these programs are actually prototypes of more powerful, implosive bytebombs (8x the explosive power)! The bytebombs appear to be detonated via activation strings that exploit security vulnerabilities hidden in the code. Luckily, we've managed to obtain partial source code to the bytebombs that should prove useful in figuring out how they work.
 
-We've placed these bytebombs in a secure, binary-shielded part of our server. We need you to find working activation strings so that we can safely dispose of the bytebombs. To do so, you'll need to stack some bytes and attack the stack!
-
 <!--more-->
+
+We've placed these bytebombs in a secure, binary-shielded part of our server. We need you to find working activation strings so that we can safely dispose of the bytebombs. To do so, you'll need to stack some bytes and attack the stack!
 
 This assignment involves generating a total of five attacks on two programs having different security vulnerabilities. Outcomes you will gain from this lab include:
 

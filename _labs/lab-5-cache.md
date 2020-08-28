@@ -1,8 +1,5 @@
 ---
 title: Lab 5 - Make Some Cache
-assigned: 2020-04-17 23:59
-due: 2020-05-12 23:59
-hidden: false
 collaboration_policy: Level 1
 group_policy: Pair-optional (you may work in a group of 2 if you wish)
 ---

@@ -1,7 +1,5 @@
 ---
 title: Mini Lab - Debugging
-assigned: 2020-02-13 00:00
-due: 2020-02-21 23:59
 hidden: false
 collaboration_policy: Level 0 (open collaboration)
 ---

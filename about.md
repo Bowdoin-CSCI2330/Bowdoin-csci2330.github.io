@@ -27,19 +27,26 @@ Prior knowledge of C is not required or expected.
 
 Evaluation for the course is based on attendance and participation during class and lab sessions, completion of lab assignments, and two exams (one midterm and a final).
 
-| Exams | 50% | Midterm and Final, both in-class
-| Labs  | 50% | Seven (7) graded, one (1) optional
-| Participation | Tiebreaker | Engagement in class and discussion
+| Item                          | Points Each   | Total Points
+| Weekly Prep Quiz	            | 2 x 15 weeks	| 30
+| Weekly Class Participation	| 2 x 15 weeks	| 30
+| Weekly Quiz	                | 12 x 15 weeks	| 80
+| Midterm & Final Exam	        | 30 x 2	    | 60
+| Labs	                        | 50 x 6	    | 300
+| Total	 	                    |               | 600
 
 Labs will be a mix of individual and group assignments. These assignments will demand a significant time commitment on your part, and it is critical that you start working early!
 
 You will have 3 flex days to submit projects late without penalty during the semester, which may be allocated however you wish. You however, **must** notify the instructor prior to the due date and time. Beyond the use of your flex days, late assignments will be penalized one letter grade per day.
 
-### Class Meetings
+## Class Meetings
 
-The class meets <span class="due-date">Tuesdays, Thursdays, and Fridays, 8:30am - 9:55am in Searles 223</span> (all meetings)
+Each week of class will follow the same pattern.
 
-Although Friday is designated as *lab*, we will adjust as needed by the schedule. Attendance at all class meetings is **expected**.
+* There will be a prep-quiz that is worth 2 points. Your answers here will only matter that they are substantive, not that they are right or wrong. These are due each Wednesday evening. They are meant to be taken *before* you read, watch, or listen to the material.
+* There will be weekly videos, readings, etc. posted in Blackboard about the material we are covering.
+* There will be a weekly live class will be meeting live on Zoom. This will be each Thursday evening during our regularly scheduled class time. You will work on exercises with classmates and we will have Q&A as well as discuss the labs. Attendance at all class meetings is expected and participation contributes to your overall grade in the course.
+* There will be a weekly quiz worth 12 points that covers the material for that week. These are due Friday evenings.
 
 ## People
 
@@ -67,7 +74,9 @@ Although Friday is designated as *lab*, we will adjust as needed by the schedule
 
 ## Discussion Forum
 
-We will use [Slack]({{ site.discussion_url }}) to facilitate discussion outside of class. In general, you should prefer posting to Slack over sending me email, as it will allow your classmates to both see and answer your questions, possibly quicker than I alone can (though you can also post privately such that only I can see your question).
+Last semester we used [Slack]({{ site.discussion_url }}) to facilitate discussion outside of class. One of our first live-class questions will be what platform the class as a whole wants to use this semester. Some options to consider are; Slack, Teams, and Discord.
+
+In general, this will be our preferred question posting place, a general place to talk about systems, and a place to connect with TAs and myself "off hours" rather than sending email. It will allow your classmates to both see and answer your questions, possibly quicker than I alone can (though you can also post privately such that only I can see your question).
 
 ## Textbook
 There is one primary textbook that you should acquire:
@@ -84,12 +93,6 @@ There is one primary textbook that you should acquire:
 
 In addition, you may wish (but are not required) to acquire a good reference on the C programming language. We won't be using a lot of _advanced C_ so the old, yet amazingly still accurate 
 [_The C Programming Language_, 2nd edition (1988)][kandr], by B. Kernighan and D. Ritchie would be perfect. It is also available from [Amazon][kandr-amazon].
-
-## Devices in Class
-
-Use of laptops in-class is permitted for note-taking or other class-related purposes. Cell phones should be silenced and put away during class to avoid disruptions. 
-
-No electronic devices, including computers, phones, or calculators, are permitted during exams unless specifically indicated by the instructor or you have arranged for an accomodation.
 
 ## Collaboration Policy and College Honor Code
 

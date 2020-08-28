@@ -1,5 +1,5 @@
 #
-title: CSCI 2330 Foundations of Computer Systems (Spring 2020)
+title: CSCI 2330 Foundations of Computer Systems (Fall 2020)
 theme: minima
 excerpt_separator: <!--more-->
 github_username: stephenhouser
@@ -13,13 +13,14 @@ future: false
 timezone: America/New York
 baseurl: /~houser/csci2330/
 
-discussion_url: https://bowdoinsystems.slack.com
+#discussion_url: https://bowdoinsystems.slack.com
+discussion_url: 
 
 # This is the current scoreboard that /scoreboard will redirect to.
 # Change at the start of each lab.
 #scoreboard: /scoreboard/datalab.html
 #scoreboard: /scoreboard/bomblab.html
-scoreboard: /scoreboard/attacklab.html
+#scoreboard: /scoreboard/attacklab.html
 
 # These files/directories will not be processed.
 # Enable the 'scoreboard.md' when 
@@ -27,7 +28,7 @@ exclude:              ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle
 
 
 collections:
-  notes:
+  slides:
     output: true
     sort_by: order
   projects:
@@ -47,7 +48,7 @@ collections:
 defaults:
   - scope:
       path: ""
-      type: "notes"
+      type: "slides"
     values:
       layout: "note"
       hidden: false

@@ -1,7 +1,5 @@
 ---
 title: Lab 3 - Bit Bombs
-assigned: 2020-02-28 00:00
-due: 2020-04-09 23:59
 collaboration_policy: Level 1
 group_policy: Individual
 ---

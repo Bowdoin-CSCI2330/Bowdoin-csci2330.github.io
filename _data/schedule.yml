@@ -1,327 +1,77 @@
-- month: 1
-  day: 21
-  date: "2020-01-21 08:30"
-  meeting: 1
-  topic: "[Introduction](notes/introduction)"
+- week: 1
+  topic: "[Introduction](slides/introduction), [A Brief Systems Tour](slides/system-tour)"
   reading: "Ch. 1"
+  assignments: ""
+  notes: ""
 
-- month: 1
-  day: 23
-  date: "2020-01-23 08:30"
-  meeting: 2
-  topic: "[A brief Systems Tour](notes/system-tour)"
-  reading: "Ch. 1"
+- week: 2
+  topic: "[Data Representation](slides/representation), [Lab 0 Due](labs/lab-0-warmup)"
+  reading: "Ch. 2.1-2.3"
+  assignments: "[Lab 0 Due](labs/lab-0-warmup)"
+  notes: "[binary-exercises](exercises/binary-exercises),  [representation-exercises](exercises/representation-exercises)"
+  other: "[Characters, Symbols and the Unicode Miracle - Computerphile](https://youtu.be/MijmeoH9LT4)"
 
-- month: 1
-  day: 24
-  date: "2020-01-24 08:30"
-  meeting: L0
-  topic: "UNIX/Linux Warmup"
-
-- month: 1
-  day: 28
-  date: "2020-01-28 08:30"
-  meeting: 3
-  topic: "[Bits and Binary](notes/representation)"
-  reading: "Ch. 2.1, [Characters, Symbols and the Unicode Miracle - Computerphile](https://youtu.be/MijmeoH9LT4)"
-  notes: "[binary-exercises](exercises/binary-exercises)"
-
-- month: 1
-  day: 30
-  date: "2020-01-30 08:30"
-  meeting: 4
-  topic: "[Data Representation: ints](notes/representation)"
-  reading: "Ch. 2.2-2.3"
-  notes: "[representation-exercises](exercises/representation-exercises)"
-
-- month: 1
-  day: 31
-  date: "2020-01-31 08:30"
-  meeting: L1
-  topic: "[A Bit Puzzling](labs/lab-1-datalab)"
-  reading: "[Lab 0 Due](labs/lab-0-warmup)"
-
-- month: 2
-  day: 4
-  date: "2020-02-04 08:30"
-  meeting: 5
-  topic: "[Signed vs Unsigned, Integer Logic](notes/representation)"
-  notes: "[logic-exercises](exercises/logic-exercises)"
-
-- month: 2
-  day: 6
-  date: "2020-02-06 08:30"
-  meeting: 6
-  topic: "[Floating-Point Data, Memory](notes/representation)"
+- week: 3
+  topic: "[Floating-Point Data](slides/representation), [A Bit Puzzling](labs/lab-1-datalab)"
   reading: "Ch. 2.4"
-  notes: "[fp-exercises](exercises/fp-exercises)"
+  notes: "[logic-exercises](exercises/logic-exercises), [fp-exercises](exercises/fp-exercises)"
 
-- month: 2
-  day: 7
-  date: "2020-02-07 08:30"
-  meeting: L1
-  topic: "[A Bit Puzzling (cont)](labs/lab-1-datalab)"
-
-- month: 2
-  day: 11
-  date: "2020-02-11 08:30"
-  meeting: 7
-  topic: "[Programming with Memory](notes/memory)"
-  reading: "C Pointers & Memory tutorial"
-  notes: "[C Pointers & Memory Tutorial](https://pebble.gitbooks.io/learning-c-with-pebble/content/chapter08.html), [pointer-exercises](exercises/pointer-exercises)"
-
-- month: 2
-  day: 13
-  date: "2020-02-13 08:30"
-  meeting: 8
-  topic: "[Programming with Memory](notes/memory)"
-  reading: "[Lab 1 Due](labs/lab-1-datalab)"
-  notes: "[stringtest.c](samples/stringtest.c), [pointertest.c](samples/pointertest.c)"
-
-- month: 2
-  day: 14
-  date: "2020-02-14 08:30"
-  meeting: L2
-  topic: "[Programming with Memory](notes/memory), [Lab 2](labs/lab-2-pointers)"
-  reading: ""
-
-# Week 5
-- month: 2
-  day: 18
-  meeting: 9
-  date: "2020-02-18 08:30"
-  topic: "[Programming with Memory](notes/memory)"
-
-- month: 2
-  day: 20
-  date: "2020-02-20 08:30"
-  meeting: L2
-  topic: "[Program Pointers](notes/memory)"
-  notes: "[Debugging Practice Programs](labs/lab-1.5-debugging), [GDB Tutorial](https://www.cs.umd.edu/~srhuang/teaching/cmsc212/gdb-tutorial-handout.pdf)"
-
-- month: 2
-  day: 21
-  meeting: 10
-  date: "2020-02-21 08:30"
-  topic: "[x86-64 ISA, Data Movement](notes/x86-basics)"
-  reading: "Ch. 3.1-3.4, [x86 Video 1: Move Operations](https://www.youtube.com/watch?v=hGUnERVBSsc), [x86 Video 2: x86-64](https://www.youtube.com/watch?v=VsDhcfrQf6I)"
-  notes: "[mov-exercises](exercises/mov-exercises)"
-
-# Week 6
-- month: 2
-  day: 25
-  date: "2020-02-25 08:30"
-  meeting: 11
-  topic: "[Arithmetic, Condition Codes](notes/x86-basics)"
-  reading: "Ch. 3.5, [Mini Lab Suggested](labs/lab-1.5-debugging), [x86 Video 3: Addressing](https://www.youtube.com/watch?v=n2zSeZZjQqs), [x86 Video 4: Contitionals and Control Flow](https://www.youtube.com/watch?v=pG9TpOeh9RE)"
-
-- month: 2
-  day: 27
-  date: "2020-02-27 08:30"
-  meeting: 12
-  topic: "[Control Flow: Conditionals](notes/x86-control)"
-  reading: "[Lab 2 Due](labs/lab-2-pointers), Ch. 3.6, [x86 Video 4: Contitionals and Control Flow](https://www.youtube.com/watch?v=pG9TpOeh9RE), [x86 Video 5: Conditional branches](https://www.youtube.com/watch?v=YSLdsDHjhRs) "
+- week: 4
+  topic: "[Programming C and Memory](slides/memory)"
+  reading: "[C Pointers & Memory Tutorial](https://pebble.gitbooks.io/learning-c-with-pebble/content/chapter08.html)"
+  assignments: "[Lab 1 Due](labs/lab-1-datalab)"
   notes: ""
 
-- month: 2
-  day: 28
-  date: "2020-02-28 08:30"
-  meeting: 13
-  topic: "[Control Flow: Loops & Switches](notes/x86-control)"
-  reading: "[x86  Video 6: Loops](https://www.youtube.com/watch?v=DpIJ3M0Gr3Y), [x86 Video 7: Switch statement](https://www.youtube.com/watch?v=1r6oflIjC6Q)"
+- week: 5
+  topic: "[x86-64 Basics](slides/x86-basics)"
+  reading: "Ch. 3.1-3.4"
+  assignments: "[Debugging Practice Programs](labs/lab-1.5-debugging)"
+  notes: "[mov-exercises](exercises/mov-exercises), [GDB Tutorial](https://www.cs.umd.edu/~srhuang/teaching/cmsc212/gdb-tutorial-handout.pdf)"
+  other: "[x86 Video 1: Move Operations](https://www.youtube.com/watch?v=hGUnERVBSsc), [x86 Video 2: x86-64](https://www.youtube.com/watch?v=VsDhcfrQf6I)"
 
-# Week 7
-- month: 3
-  day: 3
-  date: "2020-03-03 08:30"
-  meeting: 14
-  topic: "[Control Flow: Procedures](notes/x86-control)"
-  reading: "Ch. 3.7, [Procedures Video 1: Stacks](https://www.youtube.com/watch?v=7dLZRMDcY6c)"
-
-- month: 3
-  day: 5
-  date: "2020-03-05 08:30"
-  meeting: L3
-  topic: Exam Review and Lab 3 BitBombs
-
-- month: 3
-  day: 6
-  date: "2020-03-06 08:30"
-  topic: "Midterm Exam (in lab)"
-
-# Spring Break; 2 weeks
-- month: 3
-  day: 10
-  date: "2020-03-10 08:30"
-  topic: "No Class: Spring Break"
-
-- month: 3
-  day: 12
-  date: "2020-03-12 08:30"
-  topic: "No Class: Spring Break"
-
-- month: 3
-  day: 13
-  date: "2020-03-13 08:30"
-  topic: "No Class: Spring Break"
-
-- month: 3
-  day: 17
-  date: "2020-03-17 08:30"
-  topic: "No Class: Spring Break"
-
-- month: 3
-  day: 19
-  date: "2020-03-19 08:30"
-  topic: "No Class: Spring Break"
-
-- month: 3
-  day: 20
-  date: "2020-03-20 08:30"
-  topic: "No Class: Spring Break"
-
-- month: 3
-  day: 24
-  date: "2020-03-24 08:30"
-  meeting: 15
-  topic: "No meeting, classes cancelled"
-
-## x86
-- month: 3
-  day: 26
-  date: "2020-03-26 08:30"
-  meeting: 16
-  reading: "Ch 3.7, [Procedures Video 1: Stacks](https://www.youtube.com/watch?v=7dLZRMDcY6c), [Procedures Video 2: Call stack](https://www.youtube.com/watch), [Procedures Video 3: Stack-based languages](https://www.youtube.com/watch?v=4zBG7ZAvURE)"
-  topic: "x86 Procedures"
-
-- month: 3
-  day: 27
-  date: "2020-03-27 08:30"
-  meeting: L3
-  reading: "Ch 3.7, [Procedures Video 4: Linux stack frame](https://www.youtube.com/watch?v=PrDsGldP1Q0), [Procedures Video 5: Registers and variables](https://www.youtube.com/watch?v=FdHj4NeOkF0), [Procedures Video 6: x86-64 Procedures and stacks](https://www.youtube.com/watch?v=uS4KO-rpvsU)"
-  topic: "x86 Procedures, BitBomb (video soon)"
-  notes: ""
-
-## Week
-- month: 3
-  day: 31
-  date: "2020-03-31 08:30"
-  meeting: 17
-  reading: "Ch. 3.8, 3.9, [Arrays & Structs Video 1: Arrays in C](https://www.youtube.com/watch?v=y2BAaD3fW8A), [Arrays & Structs Video 2: Multi-dimensional arrays in C](https://www.youtube.com/watch?v=3Rm3wCfBurc), [Arrays & Structs Video 3: Multi-level arrays in C](https://www.youtube.com/watch?v=0cB-UdTn8dI)"
-  topic: "Arrays & Structs"
-
-- month: 4
-  day: 2
-  date: "2020-04-02 08:30"
-  meeting: 18
-  topic: "Live Class Chat!"
-
-- month: 4
-  day: 3
-  date: "2020-04-03 08:30"
-  meeting: L4
-  topic: "Arrays & Structs"
-  reading: "Ch. 3.9, 3.10, [Arrays & Structs Video 4: Structs](https://www.youtube.com/watch?v=MIs1qHjI_i4), [Arrays & Structs Video 5: Structs and alignment](https://www.youtube.com/watch?v=TtAsN0ptKcw)"
-  notes: "[buftest.c](samples/buftest.c), [exploit.c](samples/exploit.c)"
-
-## Memory
-- month: 4
-  day: 7
-  date: "2020-04-07 08:30"
-  meeting: 19
-  topic: "Caching & The Memory Hierarchy"
-  reading: "Ch. 6.1-6.3, Caching Videos 1-3 (in Blackboard)"
-
-- month: 4
-  day: 9
-  date: "2020-04-09 08:30"
-  meeting: 20
-  topic: "Live Class Chat!"
-  reading: "[Lab 3 Due](labs/lab-3-bitbomb)"
-  notes: "[caching-exercises](exercises/caching-exercises)"
-
-- month: 4
-  day: 10
-  date: "2020-04-10 08:30"
-  meeting: L4
-  topic: "Caching & The Memory Hierarchy"
-  reading: 'Lab 4 Overview (in Blackboard)'
-
-## Week
-- month: 4
-  day: 14
-  date: "2020-04-14 08:30"
-  meeting: 21
-  topic: "Caching & The Memory Hierarchy"
-  reading: "Ch. 6.4-6.6, Caching Videos 4-6 (in Blackboard)"
-  notes: "[associative-exercises](exercises/associative-exercises)"
-
-- month: 4
-  day: 16
-  date: "2020-04-16 08:30"
-  meeting: 21
-  topic: "Live Class Chat!"
-
-- month: 4
-  day: 17
-  date: "2020-04-17 08:30"
-  meeting: L5
-  topic: "Caching & The Memory Hierarchy"
-
-## Processes
-- month: 4
-  day: 21
-  date: "2020-04-21 08:30"
-  meeting: 22
-  topic: "Process Management"
-  reading: "Ch. 8.1-8.3"
-  notes: "[fork-exercises](exercises/fork-exercises), [forktest.c](samples/forktest.c)"
-
-- month: 4
-  day: 23
-  date: "2020-04-23 08:30"
-  meeting: 23
-  topic: "Live Class Chat!"
-  reading: "Ch. 8.5, [Lab 4 Due](labs/lab-4-stack-attack)"
-  notes: ""
-
-- month: 4
-  day: 24
-  date: "2020-04-24 08:30"
-  topic: "Process Management"
-
-## Week
-- month: 4
-  day: 28
-  date: "2020-04-28 08:30"
-  meeting: 24
-  reading: "Ch. 8.4-8.5"
-  topic: "Process Management"
-  notes: "[thread.c](samples/thread.c)"
-
-- month: 4
-  day: 30
-  date: "2020-04-30 08:30"
-  meeting: L6
-  topic: "Live Class Chat!"
-  reading: ""
-
-- month: 5
-  day: 1
-  date: "2020-05-01 08:30"
-  meeting: 25
-  topic: "Process Management"
-
-## Week
-- month: 5
-  day: 5
-  date: "2020-05-05 08:30"
-  meeting: 26
-  topic: "Virtual Memory"
+- week: 6
+  topic: "[x86-64 Arithmetic and Logic](slides/x86-arithmetic)"
+  reading: "Ch. 3.5-3.6"
+  assignments: "[Lab 2 Due](labs/lab-2-pointers)"
+  other: "[x86 Video 3: Addressing](https://www.youtube.com/watch?v=n2zSeZZjQqs), [x86 Video 4: Contitionals and Control Flow](https://www.youtube.com/watch?v=pG9TpOeh9RE)"
   
-## Final Exam
-- month: 5
-  day: 12
-  date: "2020-05-12 08:30"
-  topic: "Final Exam - Available All Day"
-  reading: "[Lab 5 Due](labs/lab-5-cache)"
+- week: 7
+  topic: "[x86-64 Conditionals and Control Flow](slides/x86-control)"
+  reading: "Ch. 3.7"
+  other: "[x86 Video 4: Contitionals and Control Flow](https://www.youtube.com/watch?v=pG9TpOeh9RE), [x86 Video 5: Conditional branches](https://www.youtube.com/watch?v=YSLdsDHjhRs), [x86 Video 6: Loops](https://www.youtube.com/watch?v=DpIJ3M0Gr3Y), [x86 Video 7: Switch statement](https://www.youtube.com/watch?v=1r6oflIjC6Q)"
+
+- week: 8
+  topic: "[x86-64 Array Aloocation and Access](notes/x86-arrays)"
+  reading: "Ch. 3.8"
+  assignments: "[Lab 3 Due](labs/lab-3-bitbomb)"
+  other: "[Procedures Video 1: Stacks](https://www.youtube.com/watch?v=7dLZRMDcY6c)"
+
+- week: 9
+  topic: "[x86-64 Data Structures](slides/x86-data-structures)"
+  reading: "Ch 3.9"
+
+- week: 10
+  topic: "[x86-64 Data Structures](slides/x86-data-structures)"
+  assignments: "[Lab 4 Due](labs/lab-4-stack-attack)"
+  reading: "Ch 3.9-3.10"
+
+- week: 11
+  topic: "Storage and Memory"
+  reading: "Ch.6.1-6.3"
+
+- week: 12
+  topic: "Exceptions and Exceptional Flow"
+  assignments: "[Lab 5 Due](labs/lab-5-cache)"
+  reading: "Ch. 8.1-8.3"
+
+- week: 13
+  topic: "Thanksgiving Holiday"
+
+- week: 14
+  topic: "Process Control and Signals"
+  reading: "Ch 8.4-8.5"
+
+- week: 15
+  topic: "Virtual Memory and Linux"
+  assignments: "[Lab 6 Due](labs/lab-6-shell)"
+  reading: "Ch 9.7"

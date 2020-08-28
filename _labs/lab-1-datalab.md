@@ -1,7 +1,5 @@
 ---
 title: Lab 1 - Bit Puzzles
-assigned: 2020-01-31 23:59
-due: 2020-02-13 23:59
 collaboration_policy: Level 1
 group_policy: Individual
 ---

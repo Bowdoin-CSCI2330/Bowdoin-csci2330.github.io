@@ -1,8 +1,5 @@
 ---
 title: Lab 2 - Program Pointers
-assigned: 2020-02-13 00:00
-due: 2020-02-27 23:59
-hidden: false
 collaboration_policy: Level 1
 group_policy: Pair-optional (you may work in a group of 2 if you wish)
 ---
