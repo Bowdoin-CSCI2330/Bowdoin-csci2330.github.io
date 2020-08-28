@@ -131,7 +131,7 @@ While this lab is only a warmup, your submission will be checked based on the fo
 * Are all your files checked into and pushed to your private [GitHub][github] repository?
 * Is your name in the comments of your source code and `Makefile`
 
-    [github]: https://github.com
-    [blackboard]: https://blackboard.bowdoin.edu
-    [git]: https://git-scm.org
-    [login]: https://login.bowdoin.edu
+[github]: https://github.com
+[blackboard]: https://blackboard.bowdoin.edu
+[git]: https://git-scm.org
+[login]: https://login.bowdoin.edu
